@@ -9,6 +9,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\com_guru\JabatanController;
 use App\Http\Controllers\com_guru\KelaminController;
 use App\Http\Controllers\com_guru\StatusController;
+use App\Http\Controllers\Fronten\IndexController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\KepalaSekolahController;
@@ -17,20 +18,7 @@ use App\Http\Controllers\SuperadminController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [IndexController::class, 'index'])->name('frontend.index');
 
 Auth::routes();
 
