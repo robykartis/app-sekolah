@@ -23,18 +23,7 @@
                             <li class="news-btn"><a href="#newsletter" class="btn"><span
                                         class="btn-text">subscribe</span></a></li>
                             <li class="lang">
-                                <div class="dropdown">
-                                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        ENG
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <li><a class="dropdown-item" href="#">SPA</a></li>
-                                        <li><a class="dropdown-item" href="#">GRE</a></li>
-                                        <li><a class="dropdown-item" href="#">CIN</a></li>
-                                        <li><a class="dropdown-item" href="#">CIN</a></li>
-                                    </ul>
-                                </div>
+
                             </li>
                         </ul>
                     </div>
@@ -81,6 +70,7 @@
                                         </ul>
                                     </li>
                                     <li><a href="nft.html">NFT</a></li>
+                                    <li><a href="nft.html">NFT</a></li>
                                 </ul>
                             </div>
                             <div class="tgmenu__action">
@@ -90,10 +80,11 @@
                                             <span class="switcher__btn light-mode"><i class="flaticon-sun"></i></span>
                                             <span class="switcher__mode"></span>
                                             <span class="switcher__btn dark-mode"><i class="flaticon-moon"></i></span>
+                                            <a class="btn btn-primary"><i class="far fa-sign-in"></i></a>
                                         </nav>
                                     </li>
                                     <li class="user"><a href="#"><i class="far fa-user"></i></a></li>
-                                    <li class="header-cart"><a href="#"><i class="far fa-shopping-basket"></i></a>
+                                    <li class="header-cart"><a href="#"><i class="far fa-sign-in"></i></a>
                                     </li>
                                 </ul>
                             </div>

@@ -1,53 +1,92 @@
 @use '../utils' as *;
 
-/*=============================
-    00. Breadcrumb
-===============================*/
-.breadcrumb {
-    gap: 5px 13px;
-    margin: 0 0;
-    &-area {
-        margin: -1px 0 0;
-    }
-    &-content {
-        background: var(--tg-common-color-white);
-        padding: 24px 30px;
+/*----------------------------------------*/
+/*  BREADCRUMB CSS START
+/*----------------------------------------*/
+
+.breadcrumb{
+    &__area{
         @media #{$xs} {
-            padding: 24px 25px;
+            padding-top: 150px;
+            padding-bottom: 100px;
         }
     }
-    &-item {
-        @include flexbox();
-        gap: 13px;
-        padding: 0 0;
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: var(--tg-fw-bold);
-        color: var(--tg-heading-color);
-        &+.breadcrumb-item {
-            padding: 0 0;
+    &__title{
+        font-size: 70px;
+        color: var(--tp-common-white);
+        @media #{$sm}{
+            font-size: 68px;
         }
-        &::before {
-            display: none;
+        @media #{$xs}{
+            font-size: 40px;
         }
-        &::after {
-            content: "\f105";
-            display: block;
-            font-family: var(--tg-icon-font-family);
-            color: var(--tg-theme-primary);
-            opacity: .4;
-        }
-        &:last-child {
-            &::after {
-                display: none;
+        &-2{
+            font-size: 50px;
+            line-height: 1.1;
+            margin-top: 12px;
+            @media #{$sm}{
+                font-size: 40px;
+            }
+            @media #{$xs}{
+                font-size: 26px;
             }
         }
-        &.active {
-            color: var(--tg-theme-primary);
+        &-pre{
+            display: inline-block;
+            height: 24px;
+            line-height: 26px;
+            font-size: 14px;
+            color: #ffffff;
+            font-weight: 500;
+            background: var(--tp-theme-2);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            padding: 0 7px;
+            margin-bottom: 12px;
         }
-        & a {
-            display: block;
-            color: var(--tg-heading-color);
+    }
+    &__list{
+        & span{
+            font-size: 16px;
+            color: var(--tp-common-white);
+            font-weight: 500;
+            padding-right: 3px;
+            margin-right: 3px;
+            text-transform: capitalize;
+            & a{
+                &:hover{
+                    color: var(--tp-theme-primary);
+                }
+            }
+        }
+        &-2{
+            & span{
+                font-size: 14px;
+                color: var(--tp-text-11);
+                font-weight: 500;
+                padding-right: 3px;
+                margin-right: 3px;
+                text-transform: capitalize;
+                & a{
+                    &:hover{
+                        color: var(--tp-theme-primary);
+                    }
+                }
+            }
+        }
+    }
+    &__overlay{
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 3, 32, 0.6);
         }
     }
 }

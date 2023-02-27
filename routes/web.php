@@ -9,7 +9,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\com_guru\JabatanController;
 use App\Http\Controllers\com_guru\KelaminController;
 use App\Http\Controllers\com_guru\StatusController;
-use App\Http\Controllers\Fronten\IndexController;
+use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\KepalaSekolahController;
@@ -18,7 +18,7 @@ use App\Http\Controllers\SuperadminController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [IndexController::class, 'index'])->name('frontend.index');
+Route::get('/', [HomeController::class, 'index'])->name('frontend.index');
 
 Auth::routes();
 

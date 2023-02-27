@@ -1,186 +1,184 @@
 @use '../utils' as *;
-/*-------------------------------------------
+/*-----------------------------------------------------------------------------------
 
-   Theme Name: Sarsa - News & Magazine HTML Template
-   Author : ThemeGenix
-   Support: themegenix@gmail.com
-   Description: Sarsa - News & Magazine HTML Template
-   Version: 1.0
+    Theme Name: Tutorgo - Online Learning and Education HTML Template
+    Author: Theme Pure
+    Support: https://themepure.net/help/support/login
+    Description: Tutorgo – Education Template is a clean and modern HTML5 , Bootstrap Education Template. 
+    Version: 1.0
 
-----------------------------------------------
+-----------------------------------------------------------------------------------
 
-/************ TABLE OF CONTENTS **************
+/************ TABLE OF CONTENTS ***************
 
-    01. Theme Default CSS
-    02. Header
-    03. Mobile Menu
-    04. Banner
-    05. Trending Post
-    06. Featured Post
-    07. Video Post
-    08. Hand-Picked Post
-    09. Stories Post
-    10. Popular Post
-    11. Category Post
-    12. Latest Post
-    13. Minimal Post
-    14. Adventure Post
-    15. Blog
-    16. Blog Sidebar
-    17. Newsletter Post
-    18. Footer
-    19. Dark Mode
-
+    01. THEME DEFAULT CSS
+    02. HEADER CSS
+    03. MEAN MENU CSS
+	04. SLIDER CSS
+	05. HERO CSS
+	06. ABOUT CSS
+	07. TEAM CSS
+	08. SERVICES CSS
+	09. PORTFOLIO CSS
+	10. COURSES CSS
+	11. EVENT CSS
+	12. CTA CSS
+	13. COUNTER CSS 
+	14. FEATURE CSS
+	15. TESTIMONIAL CSS
+	16. BRAND CSS
+	17. BLOG CSS
+	18. CHECKOUT CSS
+	19. CART CSS
+	20. LOGIN CSS
+	21. FOOTER CSS
+	
 **********************************************/
+
+
+
+
+/*----------------------------------------*/
+/*  01. THEME DEFAULT CSS START
+/*----------------------------------------*/
 
 @import url($font-url);
 
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-
-
-/*=============================
-    01. Theme Default CSS
-===============================*/
+/*---------------------------------
+	typography css start 
+---------------------------------*/
 body {
-	font-family: var(--tg-body-font-family);
-	font-size: var(--tg-body-font-size);
-	font-weight: var(--tg-fw-regular);
-	color: var(--tg-body-color);
-	line-height: var(--tg-body-line-height);
-    background-color: var(--tg-common-color-gray);
+	font-family: var(--tp-ff-body);
+	font-size: var(--tp-fz-body);
+	font-weight: normal;
+	color: var(--tp-text-body);
+	line-height: 26px;
 }
-img,
-.img {
-	max-width: 100%;
-	@include transition(.3s);
-}
-a,
-button {
-	color: var(--tg-theme-primary);
-	outline: none;
-	text-decoration: none;
-	@include transition(.3s);
-}
-a:focus,
-.btn:focus,
-.button:focus {
-	text-decoration: none;
-	outline: none;
-	@include box-shadow(none);
-}
-a:hover,
-button:hover {
-	color: var(--tg-theme-primary);
+
+a {
 	text-decoration: none;
 }
-button:focus,
-input:focus,
-input:focus,
-textarea,
-textarea:focus {
-	outline: 0;
-}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: var(--tg-heading-font-family);
-	color: var(--tg-heading-color);
+	font-family: var(--tp-ff-heading);
+	color: var(--tp-heading-primary);
 	margin-top: 0px;
-	font-weight: var(--tg-fw-bold);
+	font-weight: 700;
 	line-height: 1.2;
-	text-transform: unset;
+	@include transition(.3s);
 }
-h1 a,
-h2 a,
-h3 a,
-h4 a,
-h5 a,
-h6 a {
-	color: inherit;
-}
+
 h1 {
-	font-size: 2.5rem;
+	font-size: var(--tp-fz-h1);
 }
+
 h2 {
-	font-size: 2rem;
+	font-size: var(--tp-fz-h2);
 }
+
 h3 {
-	font-size: 1.75rem;
+	font-size: var(--tp-fz-h3);
 }
+
 h4 {
-	font-size: 1.5rem;
+	font-size: var(--tp-fz-h4);
 }
+
 h5 {
-	font-size: 1.25rem;
+	font-size: var(--tp-fz-h5);
 }
+
 h6 {
-	font-size: 1rem;
+	font-size: var(--tp-fz-h6);
 }
-.list-wrap,
-.slick-dots {
+
+ul {
 	margin: 0px;
 	padding: 0px;
-	& li {
-		list-style: none;
+}
+
+p {
+	font-family: var(--tp-ff-p);
+	font-size: var(--tp-fz-p);
+	font-weight: var(--tp-fw-normal);
+	color: var(--tp-text-body);
+	margin-bottom: 15px;
+	line-height: 26px;
+}
+
+
+a,
+button,
+p,
+input,
+select,
+textarea,
+li,
+.transition-3,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@include transition(.3s);
+}
+
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+a,
+button {
+	color: inherit;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+button:focus {
+	outline: 0;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+input {
+	outline: none;
+
+	@include tp-placeholder {
+		color: var(--tp-text-3);
 	}
 }
-.tgcommon__hover {
-    & a {
-        position: relative;
-        display: inline;
-        background-image: linear-gradient(var(--tg-heading-color), var(--tg-heading-color)), linear-gradient(var(--tg-heading-color), var(--tg-heading-color));
-        background-size: 0% 1px, 0 1px;
-        background-position: 100% 100%, 0 100%;
-        background-repeat: no-repeat;
-        transition: background-size 0.4s linear;
-        &:hover {
-            color: inherit;
-            background-size: 0 1px, 100% 1px;
-        }
-    }
-}
-.tgImage__hover {
-    overflow: hidden;
-    & a {
-        display: block;
-        &:hover {
-            & img {
-                @include transform(scale(1.05));
-            }
-        }
-    }
-    & img {
-        display: block;
-        @include transition(.5s);
-        @include transform(scale(1));
-    }
-}
-p {
-	font-family: var(--tg-body-font-family);
-	font-size: var(--tg-body-font-size);
-	line-height: var(--tg-body-line-height);
-	font-weight: var(--tg-fw-regular);
-	color: var(--tg-body-color);
-	margin-bottom: 15px;
-}
-hr {
-	border-bottom: 1px solid var(--tg-common-color-gray);
-	border-top: 0 none;
-	margin: 30px 0;
-	padding: 0;
-}
-label {
-	color: var(--tg-heading-color);
-	cursor: pointer;
-	font-size: var(--tg-body-font-size);
-	font-weight: var(--tg-fw-regular);
-}
-.slick-slide:focus-visible {
-    outline: none;
-}
+
 input[type="color"] {
 	appearance: none;
 	-moz-appearance: none;
@@ -195,106 +193,310 @@ input[type="color"] {
 }
 
 *::-moz-selection {
-	background: var(--tg-theme-primary);
-	color: var(--tg-common-color-white);
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
 	text-shadow: none;
 }
+
 ::-moz-selection {
-	background: var(--tg-theme-primary);
-	color: var(--tg-common-color-white);
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
 	text-shadow: none;
 }
+
 ::selection {
-	background: var(--tg-theme-primary);
-	color: var(--tg-common-color-white);
+	background: var(--tp-common-black);
+	color: var(--tp-common-white);
 	text-shadow: none;
 }
 
-/*=============================
-    - Input Placeholder
-===============================*/
+
 *::-moz-placeholder {
-	color: var(--tg-body-color);
-	font-size: var(--tg-body-font-size);
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
 	opacity: 1;
+
+	@include tp-placeholder {
+		color: var(--tp-text-3);
+	}
 }
+
 *::placeholder {
-	color: var(--tg-body-color);
-	font-size: var(--tg-body-font-size);
+	color: var(--tp-common-black);
+	font-size: var(--tp-fz-body);
 	opacity: 1;
+
+	@include tp-placeholder {
+		color: var(--tp-text-3);
+	}
 }
 
-/*=============================
-    - Common Classes
-===============================*/
+/*---------------------------------
+    common classes css start 
+---------------------------------*/
+
+.w-img {
+	& img {
+		width: 100%;
+	}
+}
+
+.m-img {
+	& img {
+		max-width: 100%;
+	}
+}
+
 .fix {
-    overflow:hidden
-}
-.clear{
-    clear: both;
+	overflow: hidden
 }
 
-/*=============================
-    - Bootstrap Custom
-=============================*/
-.container {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.row {
-    --bs-gutter-x: 30px;
-}
-.gutter-y-30 {
-  	--bs-gutter-y: 30px;
-}
-.gx-0 {
-	--bs-gutter-x: 0;
-}
-.row-gutters-40 {
-	--bs-gutter-x: 40px;
-    @media #{$md} {
-        --bs-gutter-x: 30px;
-    }
-}
-.custom-container {
-    max-width: 1330px;
-	@media #{$xxl} {
-        max-width: 1530px;
-    }
-	@media #{$xl} {
-        max-width: 1320px;
-    }
-	@media #{$lg} {
-        max-width: 960px;
-    }
-	@media #{$md} {
-        max-width: 720px;
-    }
-	@media #{$xs} {
-        max-width: 100%;
-    }
-	@media #{$sm} {
-        max-width: 540px;
-    }
-}
-.container {
-	@media #{$xl} {
-        max-width: 1260px;
-    }
-	@media #{$lg} {
-        max-width: 960px;
-    }
-	@media #{$md} {
-        max-width: 720px;
-    }
-	@media #{$xs} {
-        max-width: 100%;
-    }
-	@media #{$sm} {
-        max-width: 540px;
-    }
+.clear {
+	clear: both;
 }
 
-.include-bg{
+
+.z-index-1 {
+	z-index: 1;
+}
+
+.z-index-11 {
+	z-index: 11;
+}
+
+.overflow-y-visible {
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.p-relative {
+	position: relative;
+}
+
+.p-absolute {
+	position: absolute;
+}
+
+.include-bg {
 	@include background();
+}
+
+
+
+/*----------------------------------------
+    Body Overlay 
+-----------------------------------------*/
+
+
+.body-overlay {
+	background-color: var(--tp-common-black);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 98;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	@include transition(.3s);
+
+	&:hover {
+		cursor: url(../img/icons/cross-out.png), pointer;
+	}
+}
+
+.body-overlay.opened {
+	opacity: .7;
+	visibility: visible;
+
+}
+
+
+/*----------------------------------------
+    Progress Wrap
+-----------------------------------------*/
+
+.progress-wrap {
+	@media #{$xs} {
+		right: 15px;
+		bottom: 15px;
+	}
+}
+
+
+// basic pagination
+
+.basic-pagination {
+	& ul {
+		& li {
+			display: inline-block;
+			margin-bottom: 30px;
+			&:not(:last-child) {
+				margin-right: 10px;
+				@media #{$xs} {
+					margin-right: 3px;
+				}
+			}
+
+			& a,
+			& span {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				line-height: 46px;
+				text-align: center;
+				@include border-radius(7px);
+				border: 2px solid #f1f1f1;
+				font-size: 18px;
+				font-weight: 600;
+
+				&:hover,
+				&.current {
+					background: var(--tp-theme-primary);
+					border-color: var(--tp-theme-primary);
+					color: var(--tp-common-white);
+				}
+			}
+		}
+	}
+}
+
+
+// nice select arrow
+
+.nice-select {
+	&::after {
+		border: none;
+		background-color: transparent;
+		@include transform(translateY(-50%));
+		margin-top: 0;
+		right: 0;
+		content: '\f107';
+		font-family: var(--tp-ff-fontawesome);
+		transform-origin: center;
+		color: var(--tp-common-black);
+		font-weight: 500;
+		height: auto;
+		width: auto;
+	}
+
+	&.open {
+		&::after {
+			@include transform(translateY(-50%) rotate(-180deg));
+			;
+		}
+	}
+}
+
+/* cart plus minus default style css */
+
+// back to top
+
+.tp-backtotop {
+	position: fixed;
+	bottom: 0;
+	right: 40px;
+	background: var(--tp-theme-primary);
+	z-index: 6;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	color: #fff;
+	font-size: 16px;
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+	opacity: 0;
+	transition: .6s;
+	z-index: 99;
+	font-size: 20px;
+	border-radius: 5px;
+
+	&.show {
+		top: auto;
+		bottom: 40px;
+		opacity: 1;
+	}
+
+	&:hover {
+		background-color: var(--tp-theme-secondary);
+	}
+}
+.cart-plus,
+.cart-minus{
+    width: 25px;
+    height: 30px;
+	line-height: 30px;
+    // border: 2px solid var(--tp-border-1);
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+	@include transition(.3s);
+	& input {
+
+	}
+    &:hover{
+        cursor: pointer;
+        // color: var(--tp-common-white);
+        // background: var(--tp-theme-primary);
+        // border-color: var(--tp-theme-primary);
+    }
+}
+.product-quantity input {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  width: 40px;
+}
+.cart-input{
+    height:30px;
+    width: 32px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-top: 2px solid var(--tp-border-1);
+    border-bottom: 2px solid var(--tp-border-1);
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 -3px;
+    padding-bottom: 0px;
+    &:focus{
+        outline: none;
+    }
+} 
+
+/* dropcap */
+
+.tp-dropcap {
+	display: inline-block;
+	font-size: 50px;
+	font-weight: 700;
+	float: left;
+	height: 70px;
+	width: 70px;
+	line-height: 70px;
+	text-align: center;
+	color: var(--tp-common-black);
+	background-color: var(--tp-common-white);
+	box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.06);
+	margin-right: 20px;
+}
+
+.course__view h4 {
+	font-size: 15px;
+	font-weight: 500;
+	color: #53545b;
+	display: inline-block;
+	margin-bottom: 0;
+}
+
+.course__sort-inner  {
+	& .nice-select{
+		background-color: var(--tp-grey-2);
+		&::after{
+			right: 10px;
+			background-color: var(--tp-grey-2);
+		}
+	}
 }

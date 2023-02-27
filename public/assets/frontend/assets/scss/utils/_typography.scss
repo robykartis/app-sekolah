@@ -1,49 +1,50 @@
-// Font URL
 
-$font-url: 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap';
+// font url
 
+$font-url: 'https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap';
 
-// Font Family
-$theme-fonts: (
-    body: (
-        font-family: "'Roboto', sans-serif",
-    ),
-    heading: (
-        font-family: "'Roboto', sans-serif",
-    ),
-    icon: (
-        font-family: '"Font Awesome 5 Pro"',
+// font family
+$font-family: (
+    ff: (
+        body: "'Roboto', sans-serif",
+        heading: "'Roboto', sans-serif",
+        p: "'Roboto', sans-serif",
+        fontawesome: '"Font Awesome 6 Pro"',
+        eleganticons:'"ElegantIcons"'
+
+    )
+);
+
+// font weight
+$font-scale: (
+    fw: (
+        normal: normal,
+        elight: 200,
+        light: 300,
+        regular: 400,
+        medium: 500,
+        sbold: 600,
+        bold: 700,
+        ebold: 800,
+        black: 900,
     )
 );
 
 
-// Font Size
+
+// font size
 $font-size: (
-    body: (
-        font-size: 16px,
-    ),
+    
+    fz: (
+        body: 14px,
+        p: 14px,
+        h1: 40px,
+        h2: 36px,
+        h3: 24px,
+        h4: 20px,
+        h5: 16px,
+        h6: 14px,
+    )
 );
 
 
-// Line Height
-$theme-lh: (
-    body: (
-        line-height: 1.62,
-    ),
-    heading: (
-        line-height: 1.2,
-    ),
-);
-
-
-// Font Weight
-$font-weight: (
-    fw: (
-        extra-bold: 800,
-        bold: 700,
-        semi-bold: 600,
-        medium: 500,
-        regular: 400,
-        light: 300,
-    ),
-);

@@ -2,44 +2,42 @@
 @use 'typography' as *;
 
 :root {
-
-
-    // @Font Family Declaration
-    @each $font-family, $shades in $theme-fonts {
+    /**
+    @font family declaration
+    */
+    @each $ff, $shades in $font-family {
         @each $shade, $value in $shades {
-            --tg-#{$font-family}-#{$shade}: #{$value};
+            --tp-#{$ff}-#{$shade}: #{$value};
         }
     }
 
-    // @Font Size
-    @each $body, $shades in $font-size {
-        @each $shade, $value in $shades {
-            --tg-#{$body}-#{$shade}: #{$value};
-        }
-    }
-
-
-    //@Line Height
-    @each $line-height, $shades in $theme-lh {
-        @each $shade, $value in $shades {
-            --tg-#{$line-height}-#{$shade}: #{$value};
-        }
-    }
-
-
-    //@Color Declaration
+    /**
+    @color declaration
+    */
     @each $color, $shades in $colors {
         @each $shade, $value in $shades {
-            --tg-#{$color}-#{$shade}: #{$value};
+            --tp-#{$color}-#{$shade}: #{$value};
         }
     }
 
 
-    //@Font Weight Declaration
-    @each $fw, $shades in $font-weight {
+    /**
+    @font weight declaration
+    */
+    
+    @each $fw, $shades in $font-scale {
         @each $shade, $value in $shades {
-            --tg-#{$fw}-#{$shade}: #{$value};
+            --tp-#{$fw}-#{$shade}: #{$value};
         }
     }
 
+    /**
+    @font size declaration
+    */
+    
+    @each $fz, $shades in $font-size {
+        @each $shade, $value in $shades {
+            --tp-#{$fz}-#{$shade}: #{$value};
+        }
+    }
 }
