@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/frontend/assets/img/logo/favicon.png') }}">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
 
     <!-- CSS here  -->
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/bootstrap.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/meanmenu.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/slick.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/font-awesome-pro.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/elegent-icons.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/spacing.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/main.css') }}">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
+    <link rel="stylesheet" href="assets/css/elegent-icons.css">
+    <link rel="stylesheet" href="assets/css/spacing.css">
+    <link rel="stylesheet" href="assets/css/main.css">
     <!-- css end  here-->
 </head>
 
@@ -29,6 +29,7 @@
     <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
+
     <!-- pre loader area start -->
     <div class="tp-preloader">
         <div class="tp-preloader__center">
@@ -67,163 +68,162 @@
 
     <!-- header area start -->
     <header>
-        <div class="tp-header__area" id="header-sticky">
-            <div class="tp-header__main">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xxl-2 col-xl-2 col-lg-2 col-md-4 col-6">
-                            <div class="logo">
-                                <a href="index.html">
-                                    <img src="{{ asset('assets/frontend/assets/img/logo/logo.png') }}" alt="logo">
-                                </a>
+        <div class="tp-header__area">
+            <div class="tp-header__top theme-bg-2 d-none d-lg-block">
+                <div class="container-fluid">
+                    <div class="tp-header__container">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-6 col-xl-8 col-lg-8 col-md-8">
+                                <div class="tp-header__info">
+                                    <ul>
+                                        <li>
+                                            <a href="tel:+443003030266"><i class="fa-regular fa-phone"></i>
+                                                +44300 303 0266</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://goo.gl/maps/qzqY2PAcQwUz1BYN9" target="_blank"><i
+                                                    class="fa-regular fa-location-dot"></i> Crown St, Brookoln, Ny
+                                                11225, USA</a>
+                                        </li>
+                                        <li>
+                                            <i class="fa-regular fa-clock"></i> Mon
+                                            - Sat 8.00 - 18.00
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xl-10 col-lg-10 col-md-8 col-6">
-                            <div class="tp-header__attach d-flex align-items-center justify-content-end">
-                                <div class="tp-header__category d-none d-lg-block mr-20">
-                                    <nav>
+                            <div class="col-xxl-6 col-xl-4 col-lg-4 col-md-4">
+                                <div class="tp-header__top-right d-flex justify-content-end align-items-center">
+                                    <div class="tp-header__account">
                                         <ul>
-                                            <li>
-                                                <a href="course-grid.html" class="cat-menu d-flex align-items-center">
-                                                    <div class="cat-dot-icon d-inline-block">
-                                                        <svg viewBox="0 0 276.2 276.2">
-                                                            <g>
-                                                                <g>
-                                                                    <path class="cat-dot"
-                                                                        d="M33.1,2.5C15.3,2.5,0.9,17,0.9,34.8s14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S51,2.5,33.1,2.5z">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M137.7,2.5c-17.8,0-32.3,14.5-32.3,32.3s14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3S155.5,2.5,137.7,2.5    z">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M243.9,67.1c17.8,0,32.3-14.5,32.3-32.3S261.7,2.5,243.9,2.5S211.6,17,211.6,34.8S226.1,67.1,243.9,67.1z">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M32.3,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3S0,120.4,0,138.2S14.5,170.5,32.3,170.5z">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M136.8,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3c-17.8,0-32.3,14.5-32.3,32.3    C104.5,156.1,119,170.5,136.8,170.5z">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M243,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3s-32.3,14.5-32.3,32.3    C210.7,156.1,225.2,170.5,243,170.5z">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M33,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S50.8,209.1,33,209.1z    ">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M137.6,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S155.4,209.1,137.6,209.1z">
-                                                                    </path>
-                                                                    <path class="cat-dot"
-                                                                        d="M243.8,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S261.6,209.1,243.8,209.1z">
-                                                                    </path>
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                    <span>Categories <i class="fa-light fa-chevron-down"></i></span>
-                                                </a>
-                                                <ul class="cat-submenu">
-                                                    <li><a href="course-details.html">English Learning</a></li>
-                                                    <li><a href="course-details.html">Web Development</a></li>
-                                                    <li><a href="course-details.html">Logo Design</a></li>
-                                                    <li><a href="course-details.html">Motion Graphics</a></li>
-                                                    <li><a href="course-details.html">Video Edition</a></li>
-                                                </ul>
-                                            </li>
+                                            <li><a href="sign-in.html"><i class="fal fa-user"></i>Login</a></li>
+                                            <li>|</li>
+                                            <li><a href="sign-up.html">Register</a></li>
+
                                         </ul>
-                                    </nav>
-                                </div>
-                                <div class="tp-header__search tp-header__search-2 d-none d-md-block">
-                                    <form>
-                                        <input type="text" placeholder="Search For Courses">
-                                        <button><i class="fal fa-search"></i></button>
-                                    </form>
-                                </div>
-                                <div class="tp-header__hamburger ml-50 d-lg-none">
-                                    <button class="hamburger-btn offcanvas-open-btn">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="tp-header__bottom primary-bg d-none d-lg-block">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-xxl-8 col-xl-8 col-lg-8 d-none d-lg-block">
-                            <div class="main-menu main-menu-2">
-                                <nav id="mobile-menu">
-                                    <ul>
-                                        <li class="has-dropdown">
-                                            <a href="index.html">Home</a>
-                                            <ul class="submenu">
-                                                <li><a href="index.html">Home Style 1</a></li>
-                                                <li><a href="index-2.html">Home Style 2</a></li>
-                                                <li><a href="index-3.html">Home Style 3</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="about-us.html">About</a>
-                                        </li>
-                                        <li class="has-dropdown">
-                                            <a href="course.html">Courses</a>
-                                            <ul class="submenu">
-                                                <li><a href="course-list.html">Courses List</a></li>
-                                                <li><a href="course.html">Courses Grid</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
-                                                <li><a href="cart.html">Cart</a></li>
-                                                <li><a href="checkout.html">Checkout</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown">
-                                            <a href="#">Pages</a>
-                                            <ul class="submenu">
-                                                <li><a href="event.html">Events</a></li>
-                                                <li><a href="event-details.html">Event Details</a></li>
-                                                <li><a href="instructor.html">Instructor V1</a></li>
-                                                <li><a href="instructor-2.html">Instructor V2</a></li>
-                                                <li><a href="instructor-details.html">Instructor Details</a></li>
-                                                <li><a href="wishlist.html">Wishlist</a></li>
-                                                <li><a href="sign-in.html">Sign In</a></li>
-                                                <li><a href="sign-up.html">Sign Up</a></li>
-                                                <li><a href="faq.html">Faq</a></li>
-                                                <li><a href="404.html">404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-dropdown">
-                                            <a href="blog.html">Blog</a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Contact</a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-6">
-                            <div class="tp-header__main-right d-flex justify-content-end align-items-center pl-30">
-                                <div class="header-acttion-btns d-flex align-items-center d-none d-md-flex">
-                                    <a href="sign-up.html" class="tp-hader-btn">Try for free<span class="icon"><i
-                                                class="fa-regular fa-arrow-right"></i> </span>
-                                    </a>
-                                    <a href="sign-in.html">
-                                        <span class="avata"><i class="fa-thin fa-user"></i></span>
-                                    </a>
+            <div class="tp-header__main" id="header-sticky">
+                <div class="container-fluid">
+                    <div class="tp-header__container">
+                        <div class="row align-items-center">
+                            <div class="col-xxl-5 col-xl-5 col-lg-3 col-md-6 col-6">
+                                <div class="tp-header-left d-flex justify-content-between align-items-center">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img src="assets/img/logo/logo.png" alt="logo">
+                                        </a>
+                                    </div>
+                                    <div class="tp-header-attach d-none d-xl-block">
+                                        <div class="tp-header__attach d-flex align-items-center">
+                                            <div class="tp-header__category d-none d-xl-block">
+                                                <nav>
+                                                    <ul>
+                                                        <li>
+                                                            <a href="course-grid.html"
+                                                                class="cat-menu d-flex align-items-center">
+                                                                <span>All Categoriess <i
+                                                                        class="fa-light fa-chevron-down"></i></span>
+                                                            </a>
+                                                            <ul class="cat-submenu">
+                                                                <li><a href="course-details.html">English Learning</a>
+                                                                </li>
+                                                                <li><a href="course-details.html">Web Development</a>
+                                                                </li>
+                                                                <li><a href="course-details.html">Logo Design</a></li>
+                                                                <li><a href="course-details.html">Motion Graphics</a>
+                                                                </li>
+                                                                <li><a href="course-details.html">Video Edition</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                            </div>
+                                            <div class="tp-header__search">
+                                                <form>
+                                                    <input type="text" placeholder="Search Courses">
+                                                    <button><i class="fal fa-search"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tp-header__hamburger ml-50 d-lg-none">
-                                    <button class="hamburger-btn offcanvas-open-btn">
-                                        <span></span>
-                                        <span></span>
-                                        <span></span>
-                                    </button>
+                            </div>
+
+                            <div class="col-xxl-5 col-xl-5 col-lg-6 d-none d-lg-block">
+                                <div class="main-menu text-end">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li class="has-dropdown">
+                                                <a href="index.html">Home</a>
+                                                <ul class="submenu">
+                                                    <li><a href="index.html">Home Style 1</a></li>
+                                                    <li><a href="index-2.html">Home Style 2</a></li>
+                                                    <li><a href="index-3.html">Home Style 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="about-us.html">About</a>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="course.html">Courses</a>
+                                                <ul class="submenu">
+                                                    <li><a href="course-list.html">Courses List</a></li>
+                                                    <li><a href="course.html">Courses Grid</a></li>
+                                                    <li><a href="course-details.html">Course Details</a></li>
+                                                    <li><a href="cart.html">Cart</a></li>
+                                                    <li><a href="checkout.html">Checkout</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="#">Pages</a>
+                                                <ul class="submenu">
+                                                    <li><a href="event.html">Events</a></li>
+                                                    <li><a href="event-details.html">Event Details</a></li>
+                                                    <li><a href="instructor.html">Instructor V1</a></li>
+                                                    <li><a href="instructor-2.html">Instructor V2</a></li>
+                                                    <li><a href="instructor-details.html">Instructor Details</a></li>
+                                                    <li><a href="wishlist.html">Wishlist</a></li>
+                                                    <li><a href="sign-in.html">Sign In</a></li>
+                                                    <li><a href="sign-up.html">Sign Up</a></li>
+                                                    <li><a href="faq.html">Faq</a></li>
+                                                    <li><a href="404.html">404</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="has-dropdown">
+                                                <a href="blog.html">Blog</a>
+                                                <ul class="submenu">
+                                                    <li><a href="blog.html">Blog</a></li>
+                                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="contact.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <div class="col-xxl-2 col-xl-2 col-lg-3 col-md-6 col-6">
+                                <div class="tp-header__main-right d-flex justify-content-end align-items-center">
+                                    <div class="header-acttion-btns d-flex align-items-center d-none d-md-flex">
+                                        <a href="sign-in.html" class="tp-btn">
+                                            <span>Try for free <i class="fa-regular fa-arrow-right"></i> </span>
+                                            <div class="transition"></div>
+                                        </a>
+                                    </div>
+                                    <div class="tp-header__hamburger ml-50 d-lg-none">
+                                        <button class="hamburger-btn offcanvas-open-btn">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +233,6 @@
         </div>
     </header>
     <!-- header area end -->
-
 
     <!-- offcanvas area start -->
     <div class="offcanvas__area">
@@ -251,7 +250,7 @@
                     </div>
                     <div class="offcanvas__logo mb-40">
                         <a href="index.html">
-                            <img src="{{ asset('assets/frontend/assets/img/logo/logo.png') }}" alt="logo">
+                            <img src="assets/img/logo/logo.png" alt="logo">
                         </a>
                     </div>
                     <div class="offcanvas-info d-none d-lg-block">
@@ -270,7 +269,7 @@
                     <div class="offcanvas__cta mt-30 mb-20">
                         <h3 class="offcanvas__cta-title">Contact info</h3>
                         <span>27 Division St, New York,</span>
-                        <span><a href="tel:+1544808">+154 4808 84082 4830</a> </span>
+                        <span>+154 4808 84082 4830</span>
                         <span>support@noxia.com</span>
                         <span>Office Hours: 8AM - 5PM</span>
                         <span>Sunday - Wekend Day</span>
@@ -286,19 +285,16 @@
     <main>
 
         <!-- slider start  -->
-        <div class="tp-slider-2__section p-relative">
+        <div class="tp-slider__section p-relative">
             <div class="tp-slilder-active">
-                <div class="tp-slider__item tp-slider__height-2 tp-slider__overlay d-flex justify-content-center align-items-center"
-                    data-background="assets/img/slider/slider-3.1.jpg">
+                <div class="tp-slider__item  tp-slider__height tp-slider__overlay d-flex justify-content-center align-items-center"
+                    data-background="assets/img/slider/slider-2.1.jpg">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12">
                                 <div class="tp-slider__content text-center">
-                                    <span class="tp-slider__subtitle" data-animation="fadeInUp"
-                                        data-delay="0.5s">Never stop
-                                        learning</span>
-                                    <h1 class="tp-slider__title tp-slider__title-sm text-white"
-                                        data-animation="fadeInUp" data-delay="0.5s">Start
+                                    <h1 class="tp-slider__title text-white" data-animation="fadeInUp"
+                                        data-delay="0.5s">Start
                                         learning <br> From best platform.
                                     </h1>
                                     <p class="text-white" data-animation="fadeInUp" data-delay="0.7s">Pic from over
@@ -307,8 +303,8 @@
                                         everymonth.</p>
                                     <div class="tp-slider__btn-wrappper p-relative z-index-1"
                                         data-animation="fadeInUp" data-delay="0.9s">
-                                        <a href="course.html" class="tp-btn">
-                                            <span>View all course<i class="fa-regular fa-arrow-right"></i></span>
+                                        <a href="course.html" class="tp-transparent-btn">
+                                            <span>Discover More Course <i class="fa-regular fa-arrow-right"></i></span>
                                             <div class="transition"></div>
                                         </a>
                                     </div>
@@ -317,29 +313,22 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="tp-slider__item  tp-slider__height-2 tp-slider__overlay d-flex justify-content-center align-items-center"
-                    data-background="assets/img/slider/slider-3.3.jpg">
+                <div class="tp-slider__item  tp-slider__height tp-slider__overlay d-flex justify-content-center align-items-center"
+                    data-background="assets/img/slider/slider-2.2.jpg">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12">
                                 <div class="tp-slider__content text-center">
-                                    <span class="tp-slider__subtitle" data-animation="fadeInUp"
-                                        data-delay="0.5s">Never stop
-                                        learning</span>
-                                    <h1 class="tp-slider__title tp-slider__title-sm text-white"
-                                        data-animation="fadeInUp" data-delay="0.5s">Free online courses <br> from the
-                                        experts.
+                                    <h1 class="tp-slider__title text-white" data-animation="fadeInUp"
+                                        data-delay="0.5s">Free online courses <br> from the experts.
                                     </h1>
                                     <p class="text-white" data-animation="fadeInUp" data-delay="0.7s">Pic from over
                                         100,000
                                         online video courses with additions published
                                         everymonth.</p>
-                                    <div class="tp-slider__btn-wrappper p-relative z-index-1"
-                                        data-animation="fadeInUp" data-delay="0.9s">
-                                        <a href="course.html" class="tp-btn">
-                                            <span>View all course<i class="fa-regular fa-arrow-right"></i></span>
-                                            <div class="transition"></div>
+                                    <div class="tp-slider__btn-wrappper" data-animation="fadeInUp" data-delay="0.9s">
+                                        <a href="course.html" class="tp-transparent-btn">
+                                            <span>Discover More Course <i class="fa-regular fa-arrow-right"></i></span>
                                         </a>
                                     </div>
                                 </div>
@@ -347,28 +336,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="tp-slider__item tp-slider__height-2 tp-slider__overlay d-flex justify-content-center align-items-center"
-                    data-background="assets/img/slider/slider-3.2.jpg">
+                <div class="tp-slider__item  tp-slider__height tp-slider__overlay d-flex justify-content-center align-items-center"
+                    data-background="assets/img/slider/slider-2.3.jpg">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-12">
                                 <div class="tp-slider__content text-center">
-                                    <span class="tp-slider__subtitle" data-animation="fadeInUp"
-                                        data-delay="0.5s">Never stop
-                                        learning</span>
-                                    <h1 class="tp-slider__title tp-slider__title-sm text-white"
-                                        data-animation="fadeInUp" data-delay="0.5s">Grow your career with<br>
-                                        Quality education.
+                                    <h1 class="tp-slider__title text-white" data-animation="fadeInUp"
+                                        data-delay="0.5s">Grow your career with<br> From best platform.
                                     </h1>
                                     <p class="text-white" data-animation="fadeInUp" data-delay="0.7s">Pic from over
                                         100,000
                                         online video courses with additions published
                                         everymonth.</p>
-                                    <div class="tp-slider__btn-wrappper p-relative z-index-1"
-                                        data-animation="fadeInUp" data-delay="0.9s">
-                                        <a href="course.html" class="tp-btn">
-                                            <span>View all course<i class="fa-regular fa-arrow-right"></i></span>
-                                            <div class="transition"></div>
+                                    <div class="tp-slider__btn-wrappper" data-animation="fadeInUp" data-delay="0.9s">
+                                        <a href="course.html" class="tp-transparent-btn">
+                                            <span>Discover More Course <i class="fa-regular fa-arrow-right"></i></span>
                                         </a>
                                     </div>
                                 </div>
@@ -377,27 +360,146 @@
                     </div>
                 </div>
             </div>
+            <div class="tp-slider__arrows">
+            </div>
         </div>
         <!-- slider end  -->
 
-        <!-- about section  start -->
+        <!-- feature start  -->
+        <div class="tp-feature-2__section">
+            <div class="container">
+                <div class="row gx-0">
+                    <div class="col-md-4">
+                        <div class="tp-feature-2__item tp-feature-2__color-1 d-lg-flex">
+                            <div class="tp-feature-2__icon mr-20">
+                                <span><i class="fa-thin fa-laptop-code"></i></span>
+                            </div>
+                            <div class="tp-feature-2__content">
+                                <h3 class="tp-feature-2__title">Apply Online</h3>
+                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor.</p>
+                                <div class="tp-feature-2__wrapper">
+                                    <span><a href="contact.html"><i class="fa-regular fa-arrow-right"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tp-feature-2__item tp-feature-2__color-2 d-lg-flex">
+                            <div class="tp-feature-2__icon mr-20">
 
+                                <span><i class="fa-thin fa-cloud-arrow-down"></i></span>
+                            </div>
+                            <div class="tp-feature-2__content">
+                                <h3 class="tp-feature-2__title">Download Prospects</h3>
+                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor.</p>
+                                <div class="tp-feature-2__wrapper">
+                                    <span><a href="contact.html"><i class="fa-regular fa-arrow-right"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="tp-feature-2__item tp-feature-2__color-3 d-lg-flex">
+                            <div class="tp-feature-2__icon mr-20">
+                                <span><i class="fa-thin fa-file-certificate"></i></span>
+                            </div>
+                            <div class="tp-feature-2__content">
+                                <h3 class="tp-feature-2__title">Certification</h3>
+                                <p>Lorem ipsum dolor sit amet elit, sed do eiusmod tempor.</p>
+                                <div class="tp-feature-2__wrapper">
+                                    <span><a href="contact.html"><i class="fa-regular fa-arrow-right"></i></a></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- feature end  -->
+
+
+        <!-- about section  start -->
+        <div class="tp-about-2__section pt-120 pb-90 p-relative fix">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="tp-about-2__img-wrapper p-relative">
+                            <div class="tp-about-2__img w-img mb-30">
+                                <img src="assets/img/about/about-2.1.png" alt="">
+                            </div>
+                            <div class="tp-about-2-shapes">
+                                <div class="tp-about-2__shapes-1">
+                                    <img src="assets/img/icons/dots-shapes-2.png" alt="">
+                                </div>
+                                <div class="tp-about-2__shapes-2 ">
+                                    <img src="assets/img/icons/theme-circle.png" alt="">
+                                </div>
+                                <div class="tp-about-2__shapes-7 ">
+                                    <img src="assets/img/icons/about-tag.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tp-about-2__right ml-110">
+                            <div class="tp-section__title-wrapper">
+                                <h3 class="tp-section__title mb-15">Not Sure Where to Begin?
+                                    Take Our Quiz.</h3>
+                                <p class="mb-40">Lorem ipsum dolor sit amet, consectetur aliqua adipiscing
+                                    elit, sed do eiumod tempor.</p>
+
+                                <div class="tp-about-2__feature-list mb-10">
+                                    <ul>
+                                        <li><span><i class="fa-light fa-user-group"></i></span>Skilled Teachers</li>
+                                        <li><span><i class="fa-light fa-file-pen"></i></span>Efficient & Flexible</li>
+                                        <li><span><i class="fa-light fa-chart-pie-simple"></i></span>Lifetime Access
+                                        </li>
+                                        <li><span><i class="fa-light fa-bars-progress"></i></span>Affordable Courses
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tp-hero__btn-wrappper">
+                                    <a href="about-us.html" class="tp-btn">
+                                        <span>Get Started <i class="fa-regular fa-arrow-right"></i></span>
+                                        <div class="transition"></div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="tp-about-2__shapes">
+                <div class="tp-about-2__shapes-8">
+                    <img src="assets/img/icons/lines-shape.png" alt="">
+                </div>
+                <div class="tp-about-2__shapes-3">
+                    <img src="assets/img/icons/role-shape-2.png" alt="">
+                </div>
+                <div class="tp-about-2__shapes-4 ">
+                    <img src="assets/img/icons/book-blue.png" alt="">
+                </div>
+            </div>
+        </div>
         <!-- about section end  -->
 
         <!-- course start  -->
-        <div class="tp-courses-2__section grey-bg pt-120 pb-90">
+        <div class="tp-courses-2__section grey-bg-2 pt-120 pb-90">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-lg-8">
                         <div class="tp-section__title-wrapper mb-40">
-                            <h3 class="tp-section__title mb-15">Find your online courses <br>
-                                Smarter way.</h3>
+                            <h3 class="tp-section__title mb-15">Our Popular Courses.</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur aliqua adipiscing
+                                elit, sed do eiumod tempor.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="tp-cta__btn-wrappper d-flex justify-content-lg-end mb-45 p-relative z-index-1">
                             <a href="course.html" class="tp-white-btn">
-                                <span>See All course <i class="fa-regular fa-arrow-right"></i></span>
+                                <span>See All course<i class="fa-regular fa-arrow-right"></i></span>
                                 <div class="transition"></div>
                             </a>
                         </div>
@@ -406,91 +508,102 @@
                 <div class="tp-courses-2__tab-content">
                     <div class="row">
                         <div class="col-lg-4 col-md-6">
-                            <div class="tp-courses__item  has-radious  mb-30">
-                                <div class="tp-courses__thumb w-img fix p-relative">
+                            <div class="tp-courses-2__item mb-30">
+                                <div class="tp-courses-2__thumb w-img fix p-relative">
                                     <img src="assets/img/courses/courses-1.jpg" alt="">
                                 </div>
-                                <div class="tp-courses__content white-bg">
-                                    <div class="tp-courses__meta">
-                                        <span><i class="fa-light fa-book-blank"></i>43 Lesson</span>
-                                        <span class="tp-ratting"><i class="icon_star_alt"></i> 4.5 (100)</span>
-
+                                <div class="tp-courses-2__content white-bg">
+                                    <div class="tp-courses-2__meta d-flex justify-content-between align-items-center">
+                                        <span class="tp-courses-2__cat cat-color-1"><a href="#">Web
+                                                Design</a></span>
+                                        <span class="tp-courses-2__price">$59.65</span>
                                     </div>
-                                    <h3 class="tp-courses__title"><a href="course-details.html">The Most Complete
-                                            Design-
-                                            Thinking Course</a></h3>
-                                    <div class="tp-courses__avata">
-                                        <img src="assets/img/courses/avata/course-avata-1.jpg" alt="">
-                                        <span><a href="#">Jennifer Powell</a></span>
-                                    </div>
-                                    <div class="tp-courses__price d-flex justify-content-between">
-                                        <div class="tp-courses__time">
-                                            <span><a href="course-details.html" class="more-btn">More Deteils <i
-                                                        class="fa-regular fa-arrow-right"></i></a></span>
+                                    <h3 class="tp-courses-2__title"><a href="course-details.html">The business
+                                            Intelligence analyst
+                                            Course
+                                            2022</a></h3>
+                                    <div
+                                        class="tp-courses-2__bottom d-md-flex justify-content-between align-items-center">
+                                        <div class="tp-courses-2__sub">
+                                            <span><i class="far fa-book-alt"></i>9x Lesson</span>
                                         </div>
-                                        <div class="tp-courses__value">
-                                            <span>$59.65</span>
+                                        <div class="tp-courses-2__review">
+                                            <span>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </span>
+                                            <span>(20 votes)</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="tp-courses__item has-radious  mb-30">
-                                <div class="tp-courses__thumb w-img fix p-relative">
+                            <div class="tp-courses-2__item mb-30">
+                                <div class="tp-courses-2__thumb w-img fix p-relative">
                                     <img src="assets/img/courses/courses-2.jpg" alt="">
-
                                 </div>
-                                <div class="tp-courses__content white-bg">
-                                    <div class="tp-courses__meta">
-                                        <span><i class="fa-light fa-book-blank"></i>41 Lesson</span>
-                                        <span class="tp-ratting"><i class="icon_star_alt"></i> 4.5 (109)</span>
-
+                                <div class="tp-courses-2__content white-bg">
+                                    <div class="tp-courses-2__meta d-flex justify-content-between align-items-center">
+                                        <span class="tp-courses-2__cat cat-color-2"><a
+                                                href="course-list.html">Development</a></span>
+                                        <span class="tp-courses-2__price">$59.65</span>
                                     </div>
-                                    <h3 class="tp-courses__title"><a href="course-details.html">Everything You Need to
-                                            Know
-                                            About Business.</a></h3>
-                                    <div class="tp-courses__avata">
-                                        <img src="assets/img/courses/avata/course-avata-2.jpg" alt="">
-                                        <span><a href="#">Jim Séchen</a></span>
-                                    </div>
-                                    <div class="tp-courses__price d-flex justify-content-between">
-                                        <div class="tp-courses__time">
-                                            <span><a href="course-details.html" class="more-btn">More Deteils <i
-                                                        class="fa-regular fa-arrow-right"></i></a></span>
+                                    <h3 class="tp-courses-2__title"><a href="course-details.html">Become a product
+                                            Manager learn the
+                                            skills</a>
+                                    </h3>
+                                    <div
+                                        class="tp-courses-2__bottom d-md-flex justify-content-between align-items-center">
+                                        <div class="tp-courses-2__sub">
+                                            <span><i class="far fa-book-alt"></i>56x Lesson</span>
                                         </div>
-                                        <div class="tp-courses__value">
-                                            <span>Free</span>
+                                        <div class="tp-courses-2__review">
+                                            <span>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </span>
+                                            <span>(176 votes)</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6">
-                            <div class="tp-courses__item has-radious  mb-30">
-                                <div class="tp-courses__thumb w-img fix p-relative">
+                            <div class="tp-courses-2__item mb-30">
+                                <div class="tp-courses-2__thumb w-img fix p-relative">
                                     <img src="assets/img/courses/courses-3.jpg" alt="">
                                 </div>
-                                <div class="tp-courses__content white-bg">
-                                    <div class="tp-courses__meta">
-                                        <span><i class="fa-light fa-book-blank"></i>76 Lesson</span>
-                                        <span class="tp-ratting"><i class="icon_star_alt"></i> 4.8 (160)</span>
-
+                                <div class="tp-courses-2__content white-bg">
+                                    <div class="tp-courses-2__meta d-flex justify-content-between align-items-center">
+                                        <span class="tp-courses-2__cat cat-color-3"><a href="course-list.html">Web
+                                                Design</a></span>
+                                        <span class="tp-courses-2__price">$59.65</span>
                                     </div>
-                                    <h3 class="tp-courses__title"><a href="course-details.html">Statistics Data Scince
-                                            and
-                                            Business Analysis</a></h3>
-                                    <div class="tp-courses__avata">
-                                        <img src="assets/img/courses/avata/course-avata-3.jpg" alt="">
-                                        <span><a href="#">Ingredia Nutrisha</a></span>
-                                    </div>
-                                    <div class="tp-courses__price d-flex justify-content-between">
-                                        <div class="tp-courses__time">
-                                            <span><a href="course-details.html" class="more-btn">More Deteils <i
-                                                        class="fa-regular fa-arrow-right"></i></a></span>
+                                    <h3 class="tp-courses-2__title"><a href="course-details.html">Bases Matemáticas
+                                            dios Álgebra
+                                            Ecuacion</a>
+                                    </h3>
+                                    <div
+                                        class="tp-courses-2__bottom d-md-flex justify-content-between align-items-center">
+                                        <div class="tp-courses-2__sub">
+                                            <span><i class="far fa-book-alt"></i>147x Lesson</span>
                                         </div>
-                                        <div class="tp-courses__value">
-                                            <span>$59.65</span>
+                                        <div class="tp-courses-2__review">
+                                            <span>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star-half-alt"></i>
+                                            </span>
+                                            <span>(16 votes)</span>
                                         </div>
                                     </div>
                                 </div>
@@ -502,111 +615,417 @@
         </div>
         <!-- course end  -->
 
-        <!-- event start-->
-        <div class="tp-event-3__section pt-120 pb-120 p-relative fix">
+        <!-- counter start  -->
+        <div class="tp-counter__section pt-80 pb-60" data-background="assets/img/bg/counter-bg-1.jpg">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tp-section__title-wrapper text-center mb-60">
-                            <h3 class="tp-section__title mb-15">Public events join our <br>
-                                Upcoming.</h3>
-                            <p>University in the world for satisfaction bender grub bits.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="tp-event-3__wrapper pb-40">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
-                            <div class="tp-event-3__item mb-30">
-                                <div class="tp-event-3__content d-md-flex justify-content-between align-items-center">
-                                    <div class="tp-event-3__info">
-                                        <span><i class="fa-light fa-clock"></i> July 14, 2022</span>
-                                        <span><i class="fa-light fa-location-dot"></i> New York</span>
-                                        <h3 class="tp-event-3__title"><a href="event-details.html">Open library talks
-                                                -creative
-                                                industry development..</a> </h3>
-                                    </div>
-                                    <div class="tp-evnet-2__btn p-relative z-index-11">
-                                        <a href="#" class="tp-border-btn">
-                                            <span>Detail</span>
-                                            <div class="transition"></div>
-                                        </a>
-                                    </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="tp-section__title-wrapper mb-70 text-center">
+                                    <h3 class="tp-section__title text-white">Our Many years of <br>
+                                        Experience in Numbers</h3>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="tp-event-3__item mb-30">
-                                <div class="tp-event-3__content d-md-flex justify-content-between align-items-center">
-                                    <div class="tp-event-3__info">
-                                        <span><i class="fa-light fa-clock"></i> July 14, 2022</span>
-                                        <span><i class="fa-light fa-location-dot"></i> New York</span>
-                                        <h3 class="tp-event-3__title"><a href="event-details.html">Performance and
-                                                skills in
-                                                modern arts.</a> </h3>
-                                    </div>
-                                    <div class="tp-evnet-2__btn p-relative z-index-11">
-                                        <a href="event-details.html" class="tp-border-btn">
-                                            <span>Detail</span>
-                                            <div class="transition"></div>
-                                        </a>
-                                    </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-6">
+                                <div class="tp-counter__item mb-30 has-border">
+                                    <span><b class="counter">13286</b>Success Stories</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="tp-event-3__item mb-30">
-                                <div class="tp-event-3__content d-md-flex justify-content-between align-items-center">
-                                    <div class="tp-event-3__info">
-                                        <span><i class="fa-light fa-clock"></i> July 14, 2022</span>
-                                        <span><i class="fa-light fa-location-dot"></i> New York</span>
-                                        <h3 class="tp-event-3__title"><a href="event-details.html">Online Courses from
-                                                University.</a> </h3>
-                                    </div>
-                                    <div class="tp-evnet-2__btn p-relative z-index-11">
-                                        <a href="event-details.html" class="tp-border-btn">
-                                            <span>Detail</span>
-                                            <div class="transition"></div>
-                                        </a>
-                                    </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="tp-counter__item has-border mb-30">
+                                    <span><b class="counter">620</b>Success Stories</span>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="tp-event-3__item mb-30">
-                                <div class="tp-event-3__content d-md-flex justify-content-between align-items-center">
-                                    <div class="tp-event-3__info">
-                                        <span><i class="fa-light fa-clock"></i> July 14, 2022</span>
-                                        <span><i class="fa-light fa-location-dot"></i> New York</span>
-                                        <h3 class="tp-event-3__title"><a href="event-details.html">World education day
-                                                conference</a> </h3>
-                                    </div>
-                                    <div class="tp-evnet-2__btn p-relative z-index-11">
-                                        <a href="event-details.html" class="tp-border-btn">
-                                            <span>Detail</span>
-                                            <div class="transition"></div>
-                                        </a>
-                                    </div>
+                            <div class="col-lg-3 col-6">
+                                <div class="tp-counter__item  has-border mb-30">
+                                    <span><b class="counter">530</b>Success Stories</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="tp-event-2__btn-wrappper text-center p-relative z-index-1">
-                            <a href="event.html" class="tp-btn">
-                                <span>View All Event<i class="fa-regular fa-arrow-right"></i></span>
-                                <div class="transition"></div>
-                            </a>
+                            <div class="col-lg-3 col-6">
+                                <div class="tp-counter__item mb-30">
+                                    <span><b class="counter">2000</b>Success Stories</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- counter end  -->
+
+        <!-- event start-->
+        <div class="tp-event-2__section pt-120 pb-90 p-relative fix z-index-1">
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <div class="tp-section__title-wrapper mb-40">
+                            <h3 class="tp-section__title mb-15">Upcoming Events</h3>
+                            <p>Etiam porttitor risus massa nec condiment gravida nibh vel velit.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="tp-cta__btn-wrappper d-flex justify-content-lg-end mb-40 p-relative z-index-1">
+                            <a href="contact.html" class="tp-border-btn-white">
+                                <span>View all Event<i class="fa-regular fa-arrow-right"></i></span>
+                                <div class="transition"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tp-event-2__wrapper">
+                    <div class="tp-event-2__item mb-10">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tp-event-2__content d-md-flex align-items-center">
+                                    <div class="tp-event-2__date mr-30">
+                                        <span><b>02</b> Oct, 2022</span>
+                                    </div>
+                                    <div class="tp-event-2__info">
+                                        <span><i class="fa-light fa-location-dot"></i> United Kingdom</span>
+                                        <h3 class="tp-event-2__title"><a href="event-details.html">Online Courses from
+                                                University.</a> </h3>
+                                        <div class="tp-event-2__meta">
+                                            <img src="assets/img/testimonial/event-avata-1.jpg" alt="">
+                                            <span>Steven Mathu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tp-event-2__right d-sm-flex align-items-center justify-content-lg-end">
+                                    <div class="tp-event-2__time color-1 mr-30">
+                                        <span><i class="fal fa-clock"></i> 10:30am - 12:30pm</span>
+                                    </div>
+                                    <div class="tp-evnet-2__btn p-relative z-index-11">
+                                        <a href="event-details.html" class="tp-border-btn">
+                                            <span>View More</span>
+                                            <div class="transition"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp-event-2__item mb-10">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tp-event-2__content d-md-flex align-items-center">
+                                    <div class="tp-event-2__date mr-30">
+                                        <span><b>30</b> Oct, 2022</span>
+                                    </div>
+                                    <div class="tp-event-2__info">
+                                        <span><i class="fa-light fa-location-dot"></i> United Kingdom</span>
+                                        <h3 class="tp-event-2__title"><a href="event-details.html">How to speake like
+                                                nativespeaker?</a> </h3>
+                                        <div class="tp-event-2__meta">
+                                            <img src="assets/img/testimonial/event-avata-2.jpg" alt="">
+                                            <span>Steven Mathu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tp-event-2__right d-sm-flex align-items-center justify-content-lg-end">
+                                    <div class="tp-event-2__time color-2 mr-30">
+                                        <span><i class="fal fa-clock"></i> 10:30am - 12:30pm</span>
+                                    </div>
+                                    <div class="tp-evnet-2__btn p-relative z-index-11">
+                                        <a href="event-details.html" class="tp-border-btn" tabindex="-1">
+                                            <span>View More</span>
+                                            <div class="transition"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp-event-2__item mb-10">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tp-event-2__content d-md-flex align-items-center">
+                                    <div class="tp-event-2__date mr-30">
+                                        <span><b>20</b> Oct, 2022</span>
+                                    </div>
+                                    <div class="tp-event-2__info">
+                                        <span><i class="fa-light fa-location-dot"></i> United Kingdom</span>
+                                        <h3 class="tp-event-2__title"><a href="event-details.html">Complete Security
+                                                Course
+                                                USA.</a> </h3>
+                                        <div class="tp-event-2__meta">
+                                            <img src="assets/img/testimonial/event-avata-3.jpg" alt="">
+                                            <span>Steven Mathu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tp-event-2__right d-sm-flex align-items-center justify-content-lg-end">
+                                    <div class="tp-event-2__time color-3 mr-30">
+                                        <span><i class="fal fa-clock"></i> 10:30am - 12:30pm</span>
+                                    </div>
+                                    <div class="tp-evnet-2__btn  p-relative z-index-11">
+                                        <a href="event-details.html" class="tp-border-btn" tabindex="-1">
+                                            <span>View More</span>
+                                            <div class="transition"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tp-event-2__item mb-10">
+                        <div class="row align-items-center">
+                            <div class="col-lg-7">
+                                <div class="tp-event-2__content d-md-flex align-items-center">
+                                    <div class="tp-event-2__date mr-30">
+                                        <span><b>10</b> Oct, 2022</span>
+                                    </div>
+                                    <div class="tp-event-2__info">
+                                        <span><i class="fa-light fa-location-dot"></i> United Kingdom</span>
+                                        <h3 class="tp-event-2__title"><a href="event-details.html">Woodpress Online
+                                                Meetup</a>
+                                        </h3>
+                                        <div class="tp-event-2__meta">
+                                            <img src="assets/img/testimonial/event-avata-4.jpg" alt="">
+                                            <span>Steven Mathu</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="tp-event-2__right d-sm-flex align-items-center justify-content-lg-end">
+                                    <div class="tp-event-2__time color-4 mr-30">
+                                        <span><i class="fal fa-clock"></i> 10:30am - 12:30pm</span>
+                                    </div>
+                                    <div class="tp-evnet-2__btn  p-relative z-index-11">
+                                        <a href="event-details.html" class="tp-border-btn" tabindex="-1">
+                                            <span>View More</span>
+                                            <div class="transition"></div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-event-2__shapes">
+                <div class="tp-event-2__shapes-1">
+                    <img src="assets/img/icons/book-shape.png" alt="">
+                </div>
+                <div class="tp-event-2__shapes-2">
+                    <img src="assets/img/icons/dots-shapes.png" alt="">
+                </div>
+
+                <div class="tp-event-2__shapes-3">
+                    <img src="assets/img/icons/lines-shape.png" alt="">
+                </div>
+            </div>
+        </div>
         <!-- evant end -->
 
+        <!-- join form start  -->
 
+        <div class="tp-form__seaction grey-bg-2 pt-100 pb-70 p-relative fix z-index-1">
+
+            <div class="tp-form-shapes">
+                <div class="tp-form-shape-1">
+                    <img src="assets/img/icons/book-blue.png" alt="">
+                </div>
+                <div class="tp-form-shape-2">
+                    <img src="assets/img/icons/ring-cta-1.png" alt="">
+                </div>
+                <div class="tp-form-shape-3">
+                    <img src="assets/img/icons/ring-cta-2.png" alt="">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="tp-form__text pl-100 pr-100 mb-30">
+                            <div class="tp-section__title-wrapper mb-40">
+                                <h3 class="tp-section__title mb-15">50% Discount and
+                                    <span>2000+</span> Free Courses
+                                    for First Joining
+                                </h3>
+                                <p>Own partiality motionless was old excellence she inquietude contrasted.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="tp-form__main mr-100 white-bg mb-30 p-relative">
+                            <form>
+                                <div class="tp-form__field">
+                                    <label for="name">Full name</label><br>
+                                    <input type="text" id="name" placeholder="John Doe">
+                                </div>
+                                <div class="tp-form__field">
+                                    <label for="email">E-mail</label><br>
+                                    <input type="text" id="email" placeholder="john@yourcompany.com">
+                                </div>
+                                <div class="tp-form__field">
+                                    <label for="phone">Phone</label><br>
+                                    <input type="text" id="phone" placeholder="123-456-7890">
+                                </div>
+                                <div class="tp-form__btn">
+                                    <button type="submit" class="tp-submit-btn">Join Now</button>
+                                </div>
+                            </form>
+                            <div class="tp-form__main-shape">
+                                <img src="assets/img/icons/dots-shapes.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- join form end  -->
+
+        <!-- team start  -->
+        <div class="tp-team-2__section pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="tp-section__title-wrapper mb-40 text-center">
+                        <h3 class="tp-section__title mb-15">Become A Instruction <br>
+                            Instructor.</h3>
+                        <p>Etiam porttitor risus massa nec condiment gravida.</p>
+                    </div>
+                </div>
+                <div class="tp-team-2__wrapper mb-30">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tp-team-2__member fix mb-30">
+                                <div class="tp-team-2__img w-img tp-team-2__overlay p-relative">
+                                    <img src="assets/img/team/team-2.1.jpg" alt="">
+                                    <div class="tp-team-2__social">
+                                        <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                                    </div>
+                                </div>
+                                <div class="tp-team-2__info">
+                                    <h3 class="tp-team-2__name"><a href="instructor-2.html">Andra Flatcher</a></h3>
+                                    <span class="tp-team-2__pro">Teacher MBA</span> <br>
+                                    <span class="tp-team-2__ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tp-team-2__member fix mb-30">
+                                <div class="tp-team-2__img w-img tp-team-2__overlay p-relative">
+                                    <img src="assets/img/team/team-2.2.jpg" alt="">
+                                    <div class="tp-team-2__social">
+                                        <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                                    </div>
+                                </div>
+                                <div class="tp-team-2__info">
+                                    <h3 class="tp-team-2__name"><a href="instructor-2.html">Jessica Paeker</a></h3>
+                                    <span class="tp-team-2__pro">Teacher CSE</span> <br>
+                                    <span class="tp-team-2__ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tp-team-2__member fix mb-30">
+                                <div class="tp-team-2__img w-img tp-team-2__overlay p-relative">
+                                    <img src="assets/img/team/team-2.3.jpg" alt="">
+                                    <div class="tp-team-2__social">
+                                        <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                                    </div>
+                                </div>
+                                <div class="tp-team-2__info">
+                                    <h3 class="tp-team-2__name"><a href="instructor-2.html">Morgan Key</a></h3>
+                                    <span class="tp-team-2__pro">Teacher MBA</span> <br>
+                                    <span class="tp-team-2__ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="tp-team-2__member fix mb-30">
+                                <div class="tp-team-2__img w-img tp-team-2__overlay p-relative">
+                                    <img src="assets/img/team/team-2.4.jpg" alt="">
+                                    <div class="tp-team-2__social">
+                                        <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-youtube"></i></a></span>
+                                        <span><a href="#"><i class="fab fa-linkedin"></i></a></span>
+                                    </div>
+                                </div>
+                                <div class="tp-team-2__info">
+                                    <h3 class="tp-team-2__name"><a href="instructor-2.html">Melissa Jones</a></h3>
+                                    <span class="tp-team-2__pro">Course Mentor</span> <br>
+                                    <span class="tp-team-2__ratting">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- team end  -->
+
+        <!-- cta start-->
+        <div class="tp-cta-2__section p-relative pt-50 pb-20 p-relative"
+            data-background="assets/img/bg/cta-shape-2.jpg">
+            <div class="tp-cta-2__shape">
+                <img src="assets/img/icons/ring-2.png" alt="">
+            </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="tp-cta__info mb-30">
+                            <h3 class="tp-section__title text-white mb-25">Quickly get updates about <br>
+                                class event and news!</h3>
+                            <div class="tp-cta-2__form p-relative">
+                                <form>
+                                    <div class="tp-cta-2__field">
+                                        <input type="text" placeholder="Enter Your Email">
+                                    </div>
+                                    <button class="tp-cta-2__btn" type="submit">Subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="tp-cta-2__img text-lg-end mb-30">
+                            <img src="assets/img/icons/cta-img-2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- newsletter end -->
 
     </main>
 
@@ -672,8 +1091,8 @@
                                         <p>Receive weekly newsletter with educational,
                                             popular books and much more!</p>
                                         <form action="#">
-                                            <div class="footer__subscribe-box has-border-radius">
-                                                <div class="footer__subscribe-input has-border-radius">
+                                            <div class="footer__subscribe-box">
+                                                <div class="footer__subscribe-input">
                                                     <input type="email" placeholder="Email address">
                                                 </div>
                                                 <button class="footer-sub-btn" type="submit">Subscribe</button>
@@ -691,7 +1110,8 @@
                             <div class="footer__copyright text-center">
                                 <p> © 2022 Tutorgo, All Rights Reserved. Design By <a
                                         href="https://themeforest.net/user/theme_pure/portfolio" target="_blank">Theme
-                                        Pure</a></p>
+                                        Pure</a>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -703,21 +1123,21 @@
 
 
     <!-- JS here -->
-    <script src="{{ asset('assets/frontend/assets/js/vendor/jquery.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/vendor/waypoints.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/bootstrap-bundle.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/meanmenu.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/slick.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/magnific-popup.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/parallax.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/nice-select.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/counterup.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/wow.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/isotope-pkgd.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/imagesloaded-pkgd.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/ajax-form.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/countdown.js') }}"></script>
-    <script src="{{ asset('assets/frontend/assets/js/main.js') }}"></script>
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/waypoints.js"></script>
+    <script src="assets/js/bootstrap-bundle.js"></script>
+    <script src="assets/js/meanmenu.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/magnific-popup.js"></script>
+    <script src="assets/js/parallax.js"></script>
+    <script src="assets/js/nice-select.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/isotope-pkgd.js"></script>
+    <script src="assets/js/imagesloaded-pkgd.js"></script>
+    <script src="assets/js/ajax-form.js"></script>
+    <script src="assets/js/countdown.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>
