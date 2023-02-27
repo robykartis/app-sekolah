@@ -9,19 +9,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place favicon.ico in the root directory -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('assets/frontend/assets/img/logo/favicon.png') }}">
 
     <!-- CSS here  -->
-    <link rel="stylesheet" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
-    <link rel="stylesheet" href="assets/css/elegent-icons.css">
-    <link rel="stylesheet" href="assets/css/spacing.css">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/meanmenu.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/slick.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/magnific-popup.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/nice-select.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/font-awesome-pro.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/elegent-icons.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/spacing.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/frontend/assets/css/main.css') }}">
     <!-- css end  here-->
 </head>
 
@@ -203,7 +203,7 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="contact.html">Contact</a>
+                                                <a href="{{ route('login') }}"><i class="fal fa-user"></i></a>
                                             </li>
                                         </ul>
                                     </nav>
@@ -1123,21 +1123,21 @@
 
 
     <!-- JS here -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/waypoints.js"></script>
-    <script src="assets/js/bootstrap-bundle.js"></script>
-    <script src="assets/js/meanmenu.js"></script>
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/magnific-popup.js"></script>
-    <script src="assets/js/parallax.js"></script>
-    <script src="assets/js/nice-select.js"></script>
-    <script src="assets/js/counterup.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/isotope-pkgd.js"></script>
-    <script src="assets/js/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/ajax-form.js"></script>
-    <script src="assets/js/countdown.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/frontend/assets/js/vendor/jquery.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/vendor/waypoints.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/bootstrap-bundle.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/meanmenu.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/slick.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/magnific-popup.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/parallax.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/nice-select.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/counterup.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/wow.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/isotope-pkgd.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/imagesloaded-pkgd.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/ajax-form.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/countdown.js') }}"></script>
+    <script src="{{ asset('assets/frontend/assets/js/main.js') }}"></script>
 </body>
 
 </html>

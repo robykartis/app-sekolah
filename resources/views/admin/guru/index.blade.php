@@ -37,7 +37,7 @@
                         <a href="{{ route('jenis_kelamin.index') }}" class="btn btn-info  btn-lg">
                             Jenis Kelamin
                         </a>
-                        <a href="#" class="btn btn-warning  btn-lg">
+                        <a href="{{ route('agama_pegawai.index') }}" class="btn btn-warning  btn-lg">
                             Agama
                         </a>
                         <a href="#" class="btn btn-danger  btn-lg">
@@ -99,17 +99,20 @@
                                     <tr>
                                         <td>{{ $i++ }}</td>
                                         <td>{{ $guru->nama }}</td>
-                                        <td>{{ $guru->jenis_kelamin }}</td>
-                                        <td>{{ $guru->status }}</td>
-                                        <td>{{ $guru->jabatan }}</td>
-                                        <td>{{ $guru->get_kelas->nama }}</td>
-                                        <td>{{ $guru->poto }}</td>
+                                        <td>{{ $guru->get_kelamin->nama_kelamin }}</td>
+                                        <td>{{ $guru->get_status->nama_status }}</td>
+                                        <td>{{ $guru->get_jabatan->nama_jabatan }}</td>
+                                        <td>{{ $guru->get_kelas->nama_kelas }}</td>
+                                        <td>
+                                            <img src="/images/guru_sekolah/{{ $guru->poto }}"
+                                                alt="logo {{ $guru->poto }}" width="100">
+                                        </td>
                                         <td>
                                             <div class="btn-group" role="group">
                                                 <a href="{{ route('kelas.edit', $guru->id) }}" class="btn btn-info btn-sm">
                                                     <i class="far fa-edit"></i> Edit
                                                 </a>
-                                                <a href="{{ route('kelas.edit', $guru->id) }}"
+                                                <a href="{{ route('guru.show', $guru->id) }}"
                                                     class="btn btn-warning btn-sm">
                                                     <i class="far fa-eye"></i> View
                                                 </a>
@@ -118,7 +121,7 @@
                                                     <i class="fas fa-trash-alt"></i> Delete
                                                 </a>
                                                 <form id="delete-form-{{ $guru->id }}"
-                                                    action="{{ route('kelas.destroy', $guru->id) }}" method="POST"
+                                                    action="{{ route('guru.destroy', $guru->id) }}" method="POST"
                                                     style="display: none;">
                                                     @csrf
                                                     @method('DELETE')

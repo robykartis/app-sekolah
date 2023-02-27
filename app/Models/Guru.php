@@ -13,18 +13,35 @@ class Guru extends Model
         'id_kelas',
         'nama',
         'nip',
-        'jenis_kelamin',
-        'status',
+        'id_kelamin',
+        'id_status',
+        'id_agama',
         'umur',
         'telpon',
         'pengalaman',
-        'jabatan',
+        'id_jabatan',
         'date',
         'alamat',
-        'poto',
+        'poto'
     ];
     function get_kelas()
     {
-        return $this->belongsTo(Kelas::class, 'id_kelas');
+        return $this->belongsTo(Kelas::class, 'id_kelas')->select('nama as nama_kelas');
+    }
+    function get_kelamin()
+    {
+        return $this->belongsTo(Kelamin::class, 'id_kelamin')->select('nama as nama_kelamin');
+    }
+    function get_status()
+    {
+        return $this->belongsTo(Statusguru::class, 'id_status')->select('nama as nama_status');
+    }
+    function get_agama()
+    {
+        return $this->belongsTo(Agama::class, 'id_agama')->select('nama as nama_agama');
+    }
+    function get_jabatan()
+    {
+        return $this->belongsTo(Jabatanguru::class, 'id_jabatan')->select('nama as nama_jabatan');
     }
 }

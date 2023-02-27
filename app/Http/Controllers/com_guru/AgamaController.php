@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\com_guru;
 
 use App\Http\Controllers\Controller;
+use App\Models\Agama;
 use Illuminate\Http\Request;
 
 class AgamaController extends Controller
@@ -12,7 +13,8 @@ class AgamaController extends Controller
      */
     public function index()
     {
-        //
+        $data = Agama::paginate(2);
+        return view('admin.component_guru.agama.index', compact('data'));
     }
 
     /**
@@ -20,7 +22,7 @@ class AgamaController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.component_guru.agama.create');
     }
 
     /**
@@ -28,7 +30,13 @@ class AgamaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required|string|max:255',
+            'keterangan' => 'required|string|max:255',
+        ]);
+        Agama::create($request->post());
+        return redirect()->route('agama_pegawai.index')
+            ->with('success', 'Agama Berhasil di Tambah');
     }
 
     /**
@@ -42,24 +50,38 @@ class AgamaController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
-        //
+        $data = Agama::findOrFail($id);
+        return view('admin.component_guru.agama.edit', compact('data'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'nama' => 'required|string|max:255',
+            'keterangan' => 'required|string|max:255',
+        ]);
+        $kelas = Agama::findOrFail($id);
+        $kelas->update([
+            'nama' => $request->nama,
+            'keterangan' => $request->keterangan
+        ]);
+        return redirect()->route('agama_pegawai.index')
+            ->with('success', 'Agama Berhasil di Rubah');
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $data = Agama::findOrFail($id);
+        $data->delete();
+        return redirect()->route('agama_pegawai.index')
+            ->with('success', 'Agama Berhasil di Hapus');
     }
 }

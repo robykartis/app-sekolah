@@ -28,7 +28,8 @@ class DatabaseSeeder extends Seeder
             GuruSeeder::class,
             JabatanguruSeeder::class,
             StatusguruSeeder::class,
-            KelaminSeeder::class
+            KelaminSeeder::class,
+            AgamaSeeder::class
         ]);
     }
 }

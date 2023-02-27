@@ -13,18 +13,19 @@ return new class extends Migration
     {
         Schema::create('gurus', function (Blueprint $table) {
             $table->id();
-            $table->string('id_kelas'); //Ini Menampung id kelas
+            $table->string('id_kelas');
             $table->string('nama');
             $table->string('nip');
-            $table->string('jenis_kelamin');
-            $table->string('status');
+            $table->string('id_kelamin');
+            $table->string('id_status');
+            $table->string('id_agama');
             $table->string('umur');
             $table->string('telpon');
             $table->string('pengalaman');
-            $table->string('jabatan');
+            $table->string('id_jabatan');
             $table->date('date')->nullable();
             $table->string('alamat');
-            $table->text('poto');
+            $table->string('poto')->nullable();
             $table->timestamps();
         });
     }
