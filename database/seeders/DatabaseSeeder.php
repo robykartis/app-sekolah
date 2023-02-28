@@ -22,14 +22,14 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call([
             UserSeeder::class,
-            ProfilSeeder::class,
             KepalasekolahSeeder::class,
             KelasSeeder::class,
             GuruSeeder::class,
             JabatanguruSeeder::class,
             StatusguruSeeder::class,
             KelaminSeeder::class,
-            AgamaSeeder::class
+            AgamaSeeder::class,
+            SettingSeeder::class
         ]);
     }
 }

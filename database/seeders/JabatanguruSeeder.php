@@ -14,12 +14,12 @@ class JabatanguruSeeder extends Seeder
     public function run(): void
     {
         Jabatanguru::create([
-            'nama' => 'PNS',
-            'keterangan' => 'Ini Jabatan PNS'
+            'nama' => 'Walikelas',
+            'keterangan' => 'Ini Jabatan Walikelas'
         ]);
         Jabatanguru::create([
-            'nama' => 'HONORER',
-            'keterangan' => 'Ini Jabatan HONORER'
+            'nama' => 'Pengganti',
+            'keterangan' => 'Ini Jabatan Pengganti'
         ]);
     }
 }

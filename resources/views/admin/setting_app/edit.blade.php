@@ -16,13 +16,13 @@
                     <h6 class="m-0 font-weight-bold text-primary">Data APP</h6>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('profil.update', $profil->id) }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('setting_app.update', $data->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
-                        <input type="hidden" value="{{ $profil->id }}">
+                        <input type="hidden" value="{{ $data->id }}">
                         <div class="form-group">
                             <label for="nama">Nama</label>
-                            <input type="text" name="nama_app" value="{{ old('nama_app', $profil->nama_app) }}"
+                            <input type="text" name="nama_app" value="{{ old('nama_app', $data->nama_app) }}"
                                 class="form-control" placeholder="Masukan Nama Sekolah">
 
                             @if ($errors->has('nama_app'))
@@ -32,7 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Email</label>
-                            <input type="email" name="email_app" value="{{ old('email_app', $profil->email_app) }}"
+                            <input type="email" name="email_app" value="{{ old('email_app', $data->email_app) }}"
                                 class="form-control" placeholder="Masukan email">
 
                             @if ($errors->has('email_app'))
@@ -43,7 +43,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Telpon</label>
-                            <input type="number" name="telpon_app" value="{{ old('telpon_app', $profil->telpon_app) }}"
+                            <input type="number" name="telpon_app" value="{{ old('telpon_app', $data->telpon_app) }}"
                                 class="form-control" placeholder="Masukan telpon">
 
                             @if ($errors->has('telpon_app'))
@@ -53,7 +53,7 @@
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Alamat</label>
-                            <input type="text" name="alamat_app" value="{{ old('alamat_app', $profil->alamat_app) }}"
+                            <input type="text" name="alamat_app" value="{{ old('alamat_app', $data->alamat_app) }}"
                                 class="form-control" placeholder="Masukan alamat">
 
                             @if ($errors->has('alamat_app'))
@@ -70,7 +70,7 @@
                                 <div class="custom-file">
                                     <input type="file" name="logo_app" class="custom-file-input" id="inputGroupFile01"
                                         aria-describedby="inputGroupFileAddon01" accept="image/*">
-                                    <label class="custom-file-label" for="inputGroupFile01">Pilih Gambar</label>
+                                    <label class="custom-file-label" for="inputGroupFile01">{{ $data->logo_app }}</label>
                                 </div>
                                 @if ($errors->has('logo_app'))
                                     <small id="emailHelp"
@@ -79,7 +79,7 @@
                             </div>
                         </div>
                         <div class="d-sm-flex align-items-center justify-content-between pt-3">
-                            <a href="{{ route('profil.index') }}" class="btn btn-warning">Kembali</a>
+                            <a href="{{ route('setting_app.index') }}" class="btn btn-warning">Kembali</a>
                             <button type="submit" class="btn btn-primary">Rubah</button>
                         </div>
                     </form>
@@ -93,7 +93,7 @@
                     <h6 class="m-0 font-weight-bold text-primary">Data LOGO</h6>
                 </div>
                 <div class="card-body">
-                    <img src="/logo_app/{{ $profil->logo_app }}" alt="Logo {{ $profil->nama_app }}" width="300">
+                    <img src="/logo_app/{{ $data->logo_app }}" alt="Logo {{ $data->nama_app }}" width="300">
                 </div>
             </div>
 

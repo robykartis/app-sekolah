@@ -1,9 +1,9 @@
 @extends('master.layouts')
 @section('title')
-    Index | Profil APP
+    Index | Setting APP
 @endsection
 @section('breadcrumbs')
-    Profil APP
+    Setting APP
 @endsection
 @section('content')
     <!-- Content Row -->
@@ -31,7 +31,7 @@
                                     <th>Email</th>
                                     <th>Telpon</th>
                                     <th style="width: 25%">Alamat</th>
-                                    <th>Logo</th>
+                                    <th style="width: 15%">Logo</th>
                                     <th style="width: 15%">Aksi</th>
                                 </tr>
                             </thead>
@@ -42,14 +42,19 @@
                                         <td>{{ $dt->nama_app }}</td>
                                         <td>{{ $dt->email_app }}</td>
                                         <td>{{ $dt->telpon_app }}</td>
-                                        <td>{{ $dt->alamat_app }}</td>
                                         <td>
-                                            <img src="/logo_app/{{ $dt->logo_app }}" alt="logo {{ $dt->nama_app }}"
-                                                width="100">
+                                            {{ $dt->alamat_app }}
+                                        </td>
+                                        <td>
+                                            <div class="text-center">
+                                                <img src="/logo_app/{{ $dt->logo_app }}" alt="logo {{ $dt->nama_app }}"
+                                                    width="30%">
+                                            </div>
                                         </td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <a href="{{ route('profil.edit', $dt->id) }}" class="btn btn-info btn-sm">
+                                                <a href="{{ route('setting_app.edit', $dt->id) }}"
+                                                    class="btn btn-info btn-sm">
                                                     <i class="far fa-edit"></i> Edit
                                                 </a>
                                                 <a href="" class="btn btn-warning btn-sm">

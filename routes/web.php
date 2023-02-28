@@ -14,7 +14,9 @@ use App\Http\Controllers\GuruController;
 use App\Http\Controllers\KelasController;
 use App\Http\Controllers\KepalaSekolahController;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\SettingAppController;
 use App\Http\Controllers\SuperadminController;
+use App\Http\Controllers\UserManagementController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -30,11 +32,19 @@ Route::middleware(['auth', 'usper_admin:admin'])->group(function () {
     Route::group(['prefix' => 'super-admin'], function () {
         Route::get('/dashboard', [SuperadminController::class, 'index'])->name('super_admin.index');
 
-        Route::group(['prefix' => '/profil'], function () {
-            Route::get('/', [ProfilController::class, 'index'])->name('profil.index');
-            Route::get('/edit/{id}', [ProfilController::class, 'edit'])->name('profil.edit');
-            Route::put('/update/{id}', [ProfilController::class, 'update'])->name('profil.update');
-            Route::get('/detail/{id}', [ProfilController::class, 'show'])->name('profil.detail');
+        Route::group(['prefix' => '/setting-app'], function () {
+            Route::get('/', [SettingAppController::class, 'index'])->name('setting_app.index');
+            Route::get('/edit/{id}', [SettingAppController::class, 'edit'])->name('setting_app.edit');
+            Route::put('/update/{id}', [SettingAppController::class, 'update'])->name('setting_app.update');
+            Route::get('/detail/{id}', [SettingAppController::class, 'show'])->name('setting_app.detail');
+        });
+        Route::group(['prefix' => '/user-app'], function () {
+            Route::get('/', [UserManagementController::class, 'index'])->name('user_app.index');
+            Route::get('/tambah', [UserManagementController::class, 'create'])->name('user_app.create');
+            Route::post('/simpan', [UserManagementController::class, 'store'])->name('user_app.store');
+            Route::get('/edit/{id}', [UserManagementController::class, 'edit'])->name('user_app.edit');
+            Route::put('/update/{id}', [UserManagementController::class, 'update'])->name('user_app.update');
+            Route::get('/detail/{id}', [UserManagementController::class, 'show'])->name('user_app.show');
         });
 
         Route::group(['prefix' => '/kepala-sekolah'], function () {
