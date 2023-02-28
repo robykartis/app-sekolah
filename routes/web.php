@@ -45,6 +45,7 @@ Route::middleware(['auth', 'usper_admin:admin'])->group(function () {
             Route::get('/edit/{id}', [UserManagementController::class, 'edit'])->name('user_app.edit');
             Route::put('/update/{id}', [UserManagementController::class, 'update'])->name('user_app.update');
             Route::get('/detail/{id}', [UserManagementController::class, 'show'])->name('user_app.show');
+            Route::delete('/delete/{id}', [UserManagementController::class, 'destroy'])->name('user_app.destroy');
         });
 
         Route::group(['prefix' => '/kepala-sekolah'], function () {
@@ -99,6 +100,8 @@ Route::middleware(['auth', 'usper_admin:admin'])->group(function () {
             Route::get('/create', [GuruController::class, 'create'])->name('guru.create');
             Route::post('/store', [GuruController::class, 'store'])->name('guru.store');
             Route::get('/detail/{id}', [GuruController::class, 'show'])->name('guru.show');
+            Route::get('/edit/{id}', [GuruController::class, 'edit'])->name('guru.edit');
+            Route::put('/perbaharui/{id}', [GuruController::class, 'update'])->name('guru.update');
             Route::delete('/hapus/{id}', [GuruController::class, 'destroy'])->name('guru.destroy');
         });
     });

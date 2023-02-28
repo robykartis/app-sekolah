@@ -17,7 +17,7 @@ class KelasController extends Controller
             ->when($search, function ($query) use ($search) {
                 return $query->where('nama', 'LIKE', '%' . $search . '%');
             })
-            ->paginate(5)->fragment('kelas');
+            ->paginate(2)->fragment('kelas');
         return view('admin.kelas.index', compact('data'));
     }
 

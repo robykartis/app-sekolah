@@ -5,12 +5,19 @@
         <i class="fa fa-bars"></i>
     </button>
 
+    <div class="d-none d-sm-inline-block  mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+        <div class="input-group">
+            <div class="form-control bg-primary text-white small">
+                {{ Auth::user()->role }} | {{ Auth::user()->email }}
+            </div>
+
+        </div>
+    </div>
     <!-- Topbar Search -->
 
 
     <!-- Topbar Navbar -->
     <ul class="navbar-nav ml-auto">
-
 
 
         <div class="topbar-divider d-none d-sm-block"></div>

@@ -20,8 +20,8 @@
                         <div class="card-body">
 
                             <div class="text-center">
-                                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4 rounded-circle" style="width: 35rem;"
-                                    src="/images/guru_sekolah/{{ $data->poto }}" alt="logo {{ $data->poto }}">
+                                <img class="img-fluid px-3 px-sm-4 mt-3 mb-4 rounded-circle" style="width: 30rem;"
+                                    src="/images/guru_sekolah/{{ $data->poto }}" alt="poto {{ $data->poto }}">
                             </div>
                             <div class="row">
                                 <div class="col-6">
@@ -32,37 +32,38 @@
                                     </div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> NAMA :</b> Roby
+                                            <b> NAMA :</b> {{ $data->nama }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> KELAS :</b> Roby
+                                            <b> KELAS :</b> {{ $data->get_kelas->nama_kelas }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> NIP :</b> Roby
+                                            <b> NIP :</b> {{ $data->nip }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> STATUS :</b> Roby
+                                            <b> STATUS :</b> {{ $data->get_status->nama_status }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> JABATAN :</b> Roby
+                                            <b> JABATAN :</b> {{ $data->get_jabatan->nama_jabatan }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b>BERGABUNG :</b> Roby
+                                            <b>BERGABUNG :</b>
+                                            {{ \Carbon\Carbon::parse($data->date)->locale('id')->isoFormat(' D MMMM Y') }}
                                         </h5>
                                     </div>
                                 </div>
@@ -74,37 +75,37 @@
                                     </div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> AGAMA :</b> Roby
+                                            <b> AGAMA :</b> {{ $data->get_agama->nama_agama }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> JENIS KELAMIN :</b> Roby
+                                            <b> JENIS KELAMIN :</b> {{ $data->get_kelamin->nama_kelamin }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> UMUR :</b> Roby
+                                            <b> UMUR :</b> {{ $data->umur }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> ALAMAT :</b> Roby
+                                            <b> ALAMAT :</b> {{ $data->alamat }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> PENGALAMAN :</b> Roby
+                                            <b> PENGALAMAN :</b> {{ $data->pengalaman }}
                                         </h5>
                                     </div>
                                     <div class="dropdown-divider"></div>
                                     <div class="text-center">
                                         <h5>
-                                            <b> TELPON :</b> Roby
+                                            <b> TELPON :</b> {{ $data->telpon }}
                                         </h5>
                                     </div>
 

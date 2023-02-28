@@ -26,7 +26,7 @@ class KepalaSekolahController extends Controller
             'jenis_kelamin' => 'required',
             'umur' => 'required',
             'telpon' => 'required',
-            'poto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'poto' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ], [
             'nama.required' => 'Nama tidak boleh kosong',
             'jenis_kelamin.required' => 'Jenis kelamin tidak boleh kosong',

@@ -14,9 +14,15 @@ class UserManagementController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $data = User::paginate(2);
+        $search = $request->input('search');
+        $data = User::query()
+            ->when($search, function ($query) use ($search) {
+                return $query->where('name', 'LIKE', '%' . $search . '%');
+            })
+            ->paginate(2)->fragment('users');
+
         return view('admin.user_management.index', compact('data'));
     }
 
@@ -27,13 +33,16 @@ class UserManagementController extends Controller
     {
         $role = [
             [
-                'nama' => 'Admin'
+                'nama' => 'admin'
             ],
             [
-                'nama' => 'Guru'
+                'nama' => 'kepala_sekolah'
             ],
             [
-                'nama' => 'Murid'
+                'nama' => 'guru_sekolah'
+            ],
+            [
+                'nama' => 'murid_sekolah'
             ],
         ];
         return view('admin.user_management.create', compact('role'));
@@ -96,16 +105,58 @@ class UserManagementController extends Controller
      */
     public function edit(string $id)
     {
+        $role = [
+            [
+                'nama' => 'admin'
+            ],
+            [
+                'nama' => 'kepala_sekolah'
+            ],
+            [
+                'nama' => 'guru_sekolah'
+            ],
+            [
+                'nama' => 'murid_sekolah'
+            ],
+        ];
         $data = User::findOrFail($id);
-        return view('admin.user_management.edit', compact('data'));
+        return view('admin.user_management.edit', compact(['data', 'role']));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'email' => 'required|email|unique:users,email,' . $id,
+            'role' => 'required',
+            'poto' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        ]);
+
+        try {
+            $user = User::findOrFail($id);
+            if ($image = $request->file('poto')) {
+                $destinationPath = 'images/user_app';
+                $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+                $image->move($destinationPath, $profileImage);
+                $user['poto'] = "$profileImage";
+            } else {
+                unset($user['poto']);
+            }
+            $user->name = $request->name;
+            $user->email = $request->email;
+            $user->role = $request->role;
+            if ($request->password)
+                $user->password = Hash::make($request->password);
+            $user->save();
+
+            return redirect()->route('user_app.index')
+                ->with('success', 'User Berhasil di Rubah');
+        } catch (\Throwable $e) {
+            echo $e->getMessage();
+        }
     }
 
     /**
@@ -113,6 +164,9 @@ class UserManagementController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $user = User::findOrFail($id);
+        $user->delete();
+        return redirect()->route('user_app.index')
+            ->with('success', 'User Berhasil di Hapus');
     }
 }

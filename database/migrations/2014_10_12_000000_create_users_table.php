@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('role');
             $table->string('poto')->nullable();
             $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
+            $table->string('password')->default('');
             $table->rememberToken();
             $table->timestamps();
         });

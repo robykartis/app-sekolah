@@ -1,9 +1,9 @@
 @extends('master.layouts')
 @section('title')
-    Edit | Profil APP
+    Edit | Kepala Sekolah
 @endsection
 @section('breadcrumbs')
-    Profil APP
+    Kepala Sekolah
 @endsection
 @section('content')
     <!-- Content Row -->
@@ -86,7 +86,7 @@
                         </div>
 
                         <div class="d-sm-flex align-items-center justify-content-between pt-3">
-                            <a href="{{ route('profil.index') }}" class="btn btn-warning">Kembali</a>
+                            <a href="{{ route('kepala_sekolah.index') }}" class="btn btn-warning">Kembali</a>
                             <button type="submit" class="btn btn-primary">Rubah</button>
                         </div>
                     </form>

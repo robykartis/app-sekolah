@@ -11,7 +11,7 @@
 
     <title> {{ App\Models\Setting::first()->nama_app }} | @yield('title')</title>
 
-    <link rel="icon" type="image/png" src="/logo_app/{{ App\Models\Setting::first()->logo_app }}">
+    <link rel="icon" type="image/png" href="/logo_app/{{ App\Models\Setting::first()->logo_app }}">
     <!-- Custom fonts for this template-->
     <link href="{{ asset('assets/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link

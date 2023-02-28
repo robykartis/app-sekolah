@@ -9,15 +9,7 @@
     <!-- Content Row -->
 
     <div class="row">
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+
         <div class="col-lg-8 mb-4">
             <!-- Approach -->
             <div class="card shadow mb-4">
@@ -31,7 +23,7 @@
                         <div class="form-group">
                             <label for="kelas">Kelas</label>
                             <select name="id_kelas" class="form-control">
-                                <option selected>Pilih Kelas</option>
+                                <option value="" selected>Pilih Kelas</option>
                                 @foreach ($kelas as $kl)
                                     <option value="{{ $kl->id }}">
                                         {{ $kl->nama }}</option>
@@ -45,7 +37,7 @@
                         <div class="form-group">
                             <label for="status">Status</label>
                             <select name="id_status" class="form-control">
-                                <option selected>Pilih Status</option>
+                                <option value="" selected>Pilih Status</option>
                                 @foreach ($status as $st)
                                     <option value="{{ $st->id }}">
                                         {{ $st->nama }}</option>
@@ -59,7 +51,7 @@
                         <div class="form-group">
                             <label for="jabatan">Jabatan</label>
                             <select name="id_jabatan" class="form-control">
-                                <option selected>Pilih Status</option>
+                                <option value="" selected>Pilih Status</option>
                                 @foreach ($jabatan as $jb)
                                     <option value="{{ $jb->id }}">
                                         {{ $jb->nama }}</option>
@@ -107,7 +99,7 @@
                         <div class="form-group">
                             <label for="kelamin">Jenis Kelamin</label>
                             <select name="id_kelamin" class="form-control">
-                                <option selected>Pilih Jenis Kelamin</option>
+                                <option value="" selected>Pilih Jenis Kelamin</option>
                                 @foreach ($kelamin as $kel)
                                     <option value="{{ $kel->id }}">
                                         {{ $kel->nama }}</option>
@@ -121,7 +113,7 @@
                         <div class="form-group">
                             <label for="agama">Agama</label>
                             <select name="id_agama" class="form-control">
-                                <option selected>Pilih Agama</option>
+                                <option value="" selected>Pilih Agama</option>
                                 @foreach ($agama as $ag)
                                     <option value="{{ $ag->id }}">
                                         {{ $ag->nama }}</option>
@@ -146,7 +138,8 @@
                             <textarea name="alamat" class="form-control" placeholder="Masukan Alamat Lengkap" cols="30" rows="10"></textarea>
 
                             @if ($errors->has('alamat'))
-                                <small id="emailHelp" class="form-text text-danger">{{ $errors->first('alamat') }}.</small>
+                                <small id="emailHelp"
+                                    class="form-text text-danger">{{ $errors->first('alamat') }}.</small>
                             @endif
                         </div>
                         <div class="form-group">

@@ -57,7 +57,7 @@ class SettingAppController extends Controller
             'email_app' => 'required|string|email|max:255',
             'telpon_app' => 'required|string|max:20',
             'alamat_app' => 'required|string|max:255',
-            'logo_app' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            'logo_app' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         // Mencari profil yang ingin diupdate berdasarkan ID

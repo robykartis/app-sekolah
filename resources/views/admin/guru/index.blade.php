@@ -109,7 +109,7 @@
                                         </td>
                                         <td>
                                             <div class="btn-group" role="group">
-                                                <a href="{{ route('kelas.edit', $guru->id) }}" class="btn btn-info btn-sm">
+                                                <a href="{{ route('guru.edit', $guru->id) }}" class="btn btn-info btn-sm">
                                                     <i class="far fa-edit"></i> Edit
                                                 </a>
                                                 <a href="{{ route('guru.show', $guru->id) }}"

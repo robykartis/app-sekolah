@@ -74,7 +74,9 @@ class GuruController extends Controller
         );
         // dd($validator);
         if ($validator->fails()) {
-            return redirect()->back()->with('error', $validator->errors()->all(),);
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
         }
 
         try {
@@ -120,17 +122,84 @@ class GuruController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Guru $guru)
+    public function edit($id)
     {
-        //
+        $data = Guru::findOrFail($id);
+        $kelas = Kelas::all();
+        $kelamin = Kelamin::all();
+        $status = Statusguru::all();
+        $jabatan = Jabatanguru::all();
+        $agama = Agama::all();
+        return view('admin.guru.edit', compact([
+            'data',
+            'kelas',
+            'kelamin',
+            'status',
+            'jabatan',
+            'agama'
+        ]));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Guru $guru)
+    public function update(Request $request, $id)
     {
-        //
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'id_kelas' => 'required',
+                'nama' => 'required',
+                'nip' => 'required',
+                'id_kelamin' => 'required',
+                'id_status' => 'required',
+                'id_agama' => 'required',
+                'umur' => 'required',
+                'telpon' => 'required',
+                'pengalaman' => 'required',
+                'id_jabatan' => 'required',
+                'date' => 'required',
+                'alamat' => 'required',
+                'poto' => 'sometimes|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            ],
+
+        );
+        // dd($validator);
+        if ($validator->fails()) {
+            return redirect()->back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        try {
+            $data = Guru::findOrFail($id);
+            $data->id_kelas = $request->id_kelas;
+            $data->nama = $request->nama;
+            $data->nip = $request->nip;
+            $data->id_kelamin = $request->id_kelamin;
+            $data->id_status = $request->id_status;
+            $data->id_agama = $request->id_agama;
+            $data->umur = $request->umur;
+            $data->telpon = $request->telpon;
+            $data->pengalaman = $request->pengalaman;
+            $data->id_jabatan = $request->id_jabatan;
+            $data->date = $request->date;
+            $data->alamat = $request->alamat;
+            if ($image = $request->file('poto')) {
+                $destinationPath = 'images/guru_sekolah';
+                $profileImage = date('YmdHis') . "." . $image->getClientOriginalExtension();
+                $image->move($destinationPath, $profileImage);
+                $data['poto'] = "$profileImage";
+            } else {
+                unset($data['poto']);
+            }
+            $data->update();
+
+            return redirect()->route('guru.index')
+                ->with('success', 'Guru Berhasil di Update');
+        } catch (\Throwable $e) {
+            echo $e->getMessage();
+        }
     }
 
     /**

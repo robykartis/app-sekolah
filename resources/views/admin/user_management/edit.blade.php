@@ -17,7 +17,7 @@
                     <h6 class="m-0 font-weight-bold text-primary">Edit Data</h6>
                 </div>
                 <div class="card-body">
-                    <form action="{{ route('user_app.update') }}" method="POST" enctype="multipart/form-data">
+                    <form action="{{ route('user_app.update', $data->id) }}" method="POST" enctype="multipart/form-data">
                         @csrf
                         @method('PUT')
                         @if ($errors->any())
@@ -30,12 +30,12 @@
                             </div>
                         @endif
                         <div class="col-lg-12">
-                            <input type="hidden">
+                            <input type="hidden" name="id" value="{{ $data->id }}">
                             <div class="form-row">
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="nama">Nama</label>
-                                        <input type="text" name="name" value="{{ old('name') }}"
+                                        <input type="text" name="name" value="{{ old('name', $data->name) }}"
                                             class="form-control  @error('name') is-invalid @enderror"
                                             placeholder="Masukan Nama Pengguna">
 
@@ -47,7 +47,7 @@
                                 <div class="col">
                                     <div class="form-group">
                                         <label for="nama">Email</label>
-                                        <input type="email" name="email" value="{{ old('email') }}"
+                                        <input type="email" name="email" value="{{ old('email', $data->email) }}"
                                             class="form-control  @error('email') is-invalid @enderror"
                                             placeholder="Masukan Email">
 
@@ -67,9 +67,11 @@
                                     <div class="form-group">
                                         <label for="kelas">Role Pengguna</label>
                                         <select name="role" class="form-control  @error('role') is-invalid @enderror">
-                                            <option selected>Pilih Role Pengguna</option>
+                                            <option value="">Pilih Role Pengguna</option>
                                             @foreach ($role as $item)
-                                                <option value="{{ $item['nama'] }}">{{ $item['nama'] }}</option>
+                                                <option value="{{ $item['nama'] }}"
+                                                    {{ $data->role == $item['nama'] ? 'selected' : '' }}>{{ $item['nama'] }}
+                                                </option>
                                             @endforeach
                                         </select>
                                         @error('role')
@@ -119,7 +121,7 @@
                                     <div class="custom-file">
                                         <input type="file" name="poto" class="custom-file-input" id="inputGroupFile01"
                                             aria-describedby="inputGroupFileAddon01" accept="image/*">
-                                        <label class="custom-file-label" for="inputGroupFile01">Pilih Gambar</label>
+                                        <label class="custom-file-label" for="inputGroupFile01">{{ $data->poto }}</label>
                                     </div>
                                     @if ($errors->has('poto'))
                                         <small id="emailHelp"
@@ -128,12 +130,9 @@
                                 </div>
                             </div>
                         </div>
-
-
-
                         <div class="d-sm-flex align-items-center justify-content-between pt-3">
-                            <a href="{{ route('guru.index') }}" class="btn btn-warning">Kembali</a>
-                            <button type="submit" class="btn btn-primary">Simpan</button>
+                            <a href="{{ route('user_app.index') }}" class="btn btn-warning">Kembali</a>
+                            <button type="submit" class="btn btn-primary">Rubah</button>
                         </div>
                     </form>
                 </div>
@@ -146,7 +145,7 @@
                     <h6 class="m-0 font-weight-bold text-primary">Data LOGO</h6>
                 </div>
                 <div class="card-body">
-                    <img src="/images/kepala_sekolah/" alt="logo " width="300">
+                    <img src="/images/user_app/{{ $data->poto }}" alt="poto {{ $data->poto }}" width="300">
                 </div>
             </div>
 

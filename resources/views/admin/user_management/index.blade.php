@@ -35,7 +35,8 @@
                                 class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                 <div class="input-group mb-3 mt-1">
                                     <input type="text" name="search" class="form-control bg-light border-0 small"
-                                        placeholder="Cari nama kelas" aria-label="Search" aria-describedby="basic-addon2">
+                                        placeholder="Cari nama pengguna" aria-label="Search"
+                                        aria-describedby="basic-addon2">
                                     <div class="input-group-append">
                                         <button class="btn btn-primary" type="submit">
                                             <i class="fas fa-search fa-sm"></i>
@@ -84,7 +85,7 @@
                                                     <i class="fas fa-trash-alt"></i> Delete
                                                 </a>
                                                 <form id="delete-form-{{ $user->id }}"
-                                                    action="{{ route('guru.destroy', $user->id) }}" method="POST"
+                                                    action="{{ route('user_app.destroy', $user->id) }}" method="POST"
                                                     style="display: none;">
                                                     @csrf
                                                     @method('DELETE')
