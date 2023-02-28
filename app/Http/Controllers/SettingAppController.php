@@ -10,6 +10,7 @@ class SettingAppController extends Controller
 
     public function index()
     {
+        // UPDATE SEKARANG
         $data = Setting::all();
         return view('admin.setting_app.index', compact('data'));
     }
