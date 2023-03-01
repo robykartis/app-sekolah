@@ -14,10 +14,10 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                 Jumlah Guru</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $guru }} Guru</div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                            <i class="fas fa-user fa-2x text-gray-300"></i>
                         </div>
                     </div>
                 </div>
@@ -32,10 +32,10 @@
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                 Jumlah Kelas</div>
-                            <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                            <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $kelas }} Kelas</div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                            <i class="fas fa-calendar fa-2x text-gray-300"></i>
                         </div>
                     </div>
                 </div>
@@ -78,7 +78,7 @@
                             <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
                         </div>
                         <div class="col-auto">
-                            <i class="fas fa-comments fa-2x text-gray-300"></i>
+                            <i class="fas fa-user fa-2x text-gray-300"></i>
                         </div>
                     </div>
                 </div>
@@ -98,34 +98,76 @@
                         <table class="table table-bordered" width="100%" cellspacing="0">
                             <thead>
                                 <tr>
-                                    <th>Name</th>
-                                    <th>Position</th>
-                                    <th>Office</th>
-                                    <th>Age</th>
-                                    <th>Start date</th>
-                                    <th>Salary</th>
+                                    <th><b>No</b></th>
+                                    <th>Nama</th>
+                                    <th>Status</th>
+                                    <th>Jabatan</th>
+                                    <th>Umur</th>
+                                    <th>Telpon</th>
+                                    <th>Poto</th>
                                 </tr>
                             </thead>
 
                             <tbody>
-                                <tr>
-                                    <td>Tiger Nixon</td>
-                                    <td>System Architect</td>
-                                    <td>Edinburgh</td>
-                                    <td>61</td>
-                                    <td>2011/04/25</td>
-                                    <td>$320,800</td>
-                                </tr>
-                                <tr>
-                                    <td>Garrett Winters</td>
-                                    <td>Accountant</td>
-                                    <td>Tokyo</td>
-                                    <td>63</td>
-                                    <td>2011/07/25</td>
-                                    <td>$170,750</td>
-                                </tr>
+                                @php
+                                    $i = ($data_guru->currentPage() - 1) * $data_guru->perPage() + 1;
+                                @endphp
+                                @foreach ($data_guru as $d_guru)
+                                    <tr>
+                                        <td>{{ $i++ }}</td>
+                                        <td>{{ $d_guru->nama }}</td>
+                                        <td>{{ $d_guru->get_status->nama_status }}</td>
+                                        <td>{{ $d_guru->get_jabatan->nama_jabatan }}</td>
+                                        <td>{{ $d_guru->umur }}</td>
+                                        <td>{{ $d_guru->telpon }}</td>
+                                        <td>
+                                            <img src="/images/guru_sekolah/{{ $d_guru->poto }}"
+                                                alt="poto {{ $d_guru->poto }}" width="100">
+                                        </td>
+                                    </tr>
+                                @endforeach
                             </tbody>
                         </table>
+                        {{ $data_guru->links() }}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 mb-4">
+            <!-- Approach -->
+            <div class="card shadow mb-4">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Data Kelas</h6>
+                </div>
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-bordered" width="100%" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th><b>No</b></th>
+                                    <th>Nama</th>
+                                    <th>Keterangan</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                @php
+                                    $i = ($data_kelas->currentPage() - 1) * $data_kelas->perPage() + 1;
+                                @endphp
+                                @foreach ($data_kelas as $d_kelas)
+                                    <tr>
+                                        <td>{{ $i++ }}</td>
+                                        <td>{{ $d_kelas->nama }}</td>
+                                        <td>{{ $d_kelas->keterangan }}</td>
+
+                                    </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                        {{ $data_kelas->links() }}
                     </div>
                 </div>
             </div>

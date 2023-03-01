@@ -6,6 +6,13 @@
     Guru
 @endsection
 @section('content')
+    <style>
+        @media(max-width: 576px) {
+            .btn-block {
+                max-width: 200px;
+            }
+        }
+    </style>
     <!-- Content Row -->
     @if (session('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -15,40 +22,31 @@
             </button>
         </div>
     @endif
+
     <div class="row">
-
-        <div class="col-lg-12">
-
-            <!-- Circle Buttons -->
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">Componen GURU</h6>
-                </div>
-                <div class="card-body">
-
-                    <!-- Circle Buttons (Large) -->
-                    <div class="btn-group d-flex">
-                        <a href="{{ route('jabatan_pegawai.index') }}" class="btn btn-primary  btn-lg">
-                            Jabatan
-                        </a>
-                        <a href="{{ route('status_pegawai.index') }}" class="btn btn-success  btn-lg">
-                            Status
-                        </a>
-                        <a href="{{ route('jenis_kelamin.index') }}" class="btn btn-info  btn-lg">
-                            Jenis Kelamin
-                        </a>
-                        <a href="{{ route('agama_pegawai.index') }}" class="btn btn-warning  btn-lg">
-                            Agama
-                        </a>
-                        <a href="#" class="btn btn-danger  btn-lg">
-                            Aksi
-                        </a>
-                    </div>
-
-                </div>
-            </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="{{ route('jabatan_pegawai.index') }}" class="btn btn-primary btn-lg btn-block">
+                Jabatan
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="{{ route('status_pegawai.index') }}" class="btn btn-success btn-lg btn-block">
+                Status
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="{{ route('jenis_kelamin.index') }}" class="btn btn-info btn-lg btn-block">
+                Kelamin
+            </a>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-4">
+            <a href="{{ route('agama_pegawai.index') }}" class="btn btn-warning btn-lg btn-block">
+                Agama
+            </a>
         </div>
     </div>
+
+
     <div class="row">
         <div class="col-lg-12 mb-4">
             <!-- Approach -->

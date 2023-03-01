@@ -53,7 +53,7 @@
     <li class="nav-item {{ set_active(['guru.index', 'guru.create']) }}">
         <a class="nav-link" href="{{ route('guru.index') }}">
             <i class="fas fa-fw fa-folder"></i>
-            <span>Data Guru</span></a>
+            <span>Data Pegawai</span></a>
     </li>
 
 
