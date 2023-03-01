@@ -1,137 +1,107 @@
-<footer class="footer-area black-bg">
-    <div class="container">
-        <div class="footer__top-wrap">
+<footer>
+
+    <!-- Footer [content] -->
+    <section id="footer" class="odd footer offers">
+        <div class="container">
             <div class="row">
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="footer__widget">
-                        <h4 class="fw-title">Worldwide</h4>
-                        <ul class="list-wrap">
-                            <li><a href="#">U.N.</a></li>
-                            <li><a href="#">Conflicts</a></li>
-                            <li><a href="#">Terrorism</a></li>
-                            <li><a href="#">Disasters</a></li>
-                            <li><a href="#">Global Economy</a></li>
-                            <li><a href="#">Environment</a></li>
-                            <li><a href="#">Religion</a></li>
-                            <li><a href="#">Scandals</a></li>
-                        </ul>
-                    </div>
+                <div class="col-12 col-lg-3 footer-left">
+
+                    <!-- Navbar Brand-->
+                    <a class="navbar-brand" href="/">
+                        <span class="brand">
+                            <span class="featured">
+                                <span class="first">NEX</span>
+                            </span>
+                            <span class="last">GEN</span>
+                        </span>
+
+                        <!--
+                                Custom Logo
+                                <img src="assets/images/logo.svg" alt="NEXGEN">
+                            -->
+                    </a>
+                    <p>A Functional HTML Template<br>for Corporate & Business.</p>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-phone-alt mr-2"></i>
+                                +1 (305) 1234-5678
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-envelope mr-2"></i>
+                                hello@example.com
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Main Avenue, 987
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#header" class="mt-4 btn outline-button smooth-anchor">GET IN TOUCH</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="footer__widget">
-                        <h4 class="fw-title">Politics</h4>
-                        <ul class="list-wrap">
-                            <li><a href="#">Executive</a></li>
-                            <li><a href="#">Senate</a></li>
-                            <li><a href="#">House</a></li>
-                            <li><a href="#">Judiciary</a></li>
-                            <li><a href="#">Global Economy</a></li>
-                            <li><a href="#">Foreign policy</a></li>
-                            <li><a href="#">Polls</a></li>
-                            <li><a href="#">Elections</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="footer__widget">
-                        <h4 class="fw-title">Entertainment</h4>
-                        <ul class="list-wrap">
-                            <li><a href="#">Celebrity News</a></li>
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">TV News</a></li>
-                            <li><a href="#">Disasters</a></li>
-                            <li><a href="#">Music News</a></li>
-                            <li><a href="#">Environment</a></li>
-                            <li><a href="#">Style News</a></li>
-                            <li><a href="#">Entertainment Video</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="footer__widget">
-                        <h4 class="fw-title">Business</h4>
-                        <ul class="list-wrap">
-                            <li><a href="#">Environment</a></li>
-                            <li><a href="#">Conflicts</a></li>
-                            <li><a href="#">Terrorism</a></li>
-                            <li><a href="#">Disasters</a></li>
-                            <li><a href="#">Global Economy</a></li>
-                            <li><a href="#">Environment</a></li>
-                            <li><a href="#">Religion</a></li>
-                            <li><a href="#">Scandals</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="footer__widget">
-                        <h4 class="fw-title">Health</h4>
-                        <ul class="list-wrap">
-                            <li><a href="#">Movies</a></li>
-                            <li><a href="#">Conflicts</a></li>
-                            <li><a href="#">Terrorism</a></li>
-                            <li><a href="#">Disasters</a></li>
-                            <li><a href="#">Global Economy</a></li>
-                            <li><a href="#">Scandals</a></li>
-                            <li><a href="#">Environment</a></li>
-                            <li><a href="#">Religion</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="footer__widget">
-                        <h4 class="fw-title">Trending In</h4>
-                        <ul class="list-wrap">
-                            <li><a href="#">U.N.</a></li>
-                            <li><a href="#">Conflicts</a></li>
-                            <li><a href="#">Terrorism</a></li>
-                            <li><a href="#">Disasters</a></li>
-                            <li><a href="#">Global Economy</a></li>
-                            <li><a href="#">Environment</a></li>
-                            <li><a href="#">Religion</a></li>
-                            <li><a href="#">Scandals</a></li>
-                        </ul>
+                <div class="col-12 col-lg-9 p-0 footer-right">
+                    <div class="row items">
+                        <div class="col-12 col-lg-4 item">
+                            <div class="card">
+                                <h4>About</h4>
+                                <a href="#"><i class="icon-arrow-right"></i>The Company</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Institutional</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Social & Events</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Innovation</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Environment</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Technology</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 item">
+                            <div class="card">
+                                <h4>Services</h4>
+                                <a href="#"><i class="icon-arrow-right"></i>Audit & Assurance</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Financial Advisory</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Analytics M&A</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Middle Marketing</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Legal Consulting</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Regulatory Risk</a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4 item">
+                            <div class="card">
+                                <h4>Support</h4>
+                                <a href="#"><i class="icon-arrow-right"></i>Responsibility</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Terms of Use</a>
+                                <a href="#"><i class="icon-arrow-right"></i>About Cookies</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Privacy Policy</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Accessibility</a>
+                                <a href="#"><i class="icon-arrow-right"></i>Information</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer__logo-wrap">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-md-4">
-                    <div class="footer__logo logo">
-                        <a href="index.html"><img src="{{ asset('assets/frontend/assets/img/logo/w_logo.png') }}"
-                                alt="Logo"></a>
-                    </div>
-                </div>
-                <div class="col-lg-9 col-md-8">
-                    <div class="footer__social">
-                        <ul class="list-wrap">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook <span>25K</span></a>
-                            </li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter <span>44K</span></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i> Youtube <span>91K</span></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__copyright">
+    </section>
+
+    <!-- Copyright -->
+    <section id="copyright" class="p-3 odd copyright">
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="copyright__text">
-                        <p>Copyright & Design By <span>@Theme_Genix</span> - 2022</p>
-                    </div>
+                <div class="col-12 col-md-6 p-3 text-center text-lg-left">
+                    <p>Enjoy the low price. We are tracking any intention of piracy.</p>
+                    <!--
+                            Suggestion: Replace the text above with a description of your website.
+                         -->
                 </div>
-                <div class="col-lg-6">
-                    <div class="copyright__menu">
-                        <ul class="list-wrap">
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Terms of Use</a></li>
-                            <li><a href="#">Advertise</a></li>
-                            <li><a href="#">Store</a></li>
-                        </ul>
-                    </div>
+                <div class="col-12 col-md-6 p-3 text-center text-lg-right">
+                    <p>© 2023 NEXGEN is Proudly Powered by <a href="https://themeforest.net/user/codingsdev"
+                            target="_blank">Codings</a>.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
 </footer>

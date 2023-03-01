@@ -1,177 +1,237 @@
-<header>
-    <div class="header__top">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6 col-sm-6 order-2 order-lg-0">
-                    <div class="header__top-search">
-                        <form action="#">
-                            <input type="text" placeholder="Search here...">
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-3 order-0 order-lg-2 d-none d-md-block">
-                    <div class="header__top-logo logo text-lg-center">
-                        <a href="index.html" class="logo-dark"><img
-                                src="{{ asset('assets/frontend/assets/img/logo/logo.png') }}" alt="Logo"></a>
-                        <a href="index.html" class="logo-light"><img
-                                src="{{ asset('assets/frontend/assets/img/logo/w_logo.png') }}" alt="Logo"></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-3 col-sm-6 order-3 d-none d-sm-block">
-                    <div class="header__top-right">
-                        <ul class="list-wrap">
-                            <li class="news-btn"><a href="#newsletter" class="btn"><span
-                                        class="btn-text">subscribe</span></a></li>
-                            <li class="lang">
+<header id="header">
 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="header-fixed-height"></div>
-    <div id="sticky-header" class="tg-header__area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="tgmenu__wrap">
-                        <nav class="tgmenu__nav">
-                            <div class="logo d-block d-md-none">
-                                <a href="index.html" class="logo-dark"><img src="assets/img/logo/logo.png"
-                                        alt="Logo"></a>
-                                <a href="index.html" class="logo-light"><img src="assets/img/logo/w_logo.png"
-                                        alt="Logo"></a>
-                            </div>
-                            <div class="offcanvas-toggle">
-                                <a href="#"><i class="flaticon-menu-bar"></i></a>
-                            </div>
-                            <div class="tgmenu__navbar-wrap tgmenu__main-menu d-none d-lg-flex">
-                                <ul class="navigation">
-                                    <li class="active menu-item-has-children"><a href="#">Home</a>
-                                        <ul class="sub-menu">
-                                            <li class="active"><a href="index.html">Home Default</a></li>
-                                            <li><a href="index-2.html">Home Interior</a></li>
-                                            <li><a href="index-3.html">Home Travel</a></li>
-                                            <li><a href="index-4.html">Home Technology</a></li>
-                                            <li><a href="index-5.html">Home NFT</a></li>
-                                            <li><a href="index-6.html">Home Fashion</a></li>
-                                            <li><a href="index-7.html">Home Adventure</a></li>
-                                            <li><a href="index-8.html">Home Minimal</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="lifestyle.html">Lifestyle</a></li>
-                                    <li><a href="travel.html">Travel</a></li>
-                                    <li class="menu-item-has-children"><a href="#">Post Type</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="blog.html">Our Blog</a></li>
-                                            <li><a href="blog-details.html">Blog Details</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="nft.html">NFT</a></li>
-                                    <li><a href="nft.html">NFT</a></li>
-                                </ul>
-                            </div>
-                            <div class="tgmenu__action">
-                                <ul class="list-wrap">
-                                    <li class="mode-switcher">
-                                        <nav class="switcher__tab">
-                                            <span class="switcher__btn light-mode"><i class="flaticon-sun"></i></span>
-                                            <span class="switcher__mode"></span>
-                                            <span class="switcher__btn dark-mode"><i class="flaticon-moon"></i></span>
-                                            <a class="btn btn-primary"><i class="far fa-sign-in"></i></a>
-                                        </nav>
-                                    </li>
-                                    <li class="user"><a href="#"><i class="far fa-user"></i></a></li>
-                                    <li class="header-cart"><a href="#"><i class="far fa-sign-in"></i></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </nav>
-                        <div class="mobile-nav-toggler"><i class="fas fa-bars"></i></div>
-                    </div>
-                    <!-- Mobile Menu  -->
-                    <div class="tgmobile__menu">
-                        <nav class="tgmobile__menu-box">
-                            <div class="close-btn"><i class="fas fa-times"></i></div>
-                            <div class="nav-logo">
-                                <a href="index.html" class="logo-dark"><img src="assets/img/logo/logo.png"
-                                        alt="Logo"></a>
-                                <a href="index.html" class="logo-light"><img src="assets/img/logo/w_logo.png"
-                                        alt="Logo"></a>
-                            </div>
-                            <div class="tgmobile__search">
-                                <form action="#">
-                                    <input type="text" placeholder="Search here...">
-                                    <button><i class="far fa-search"></i></button>
-                                </form>
-                            </div>
-                            <div class="tgmobile__menu-outer">
-                                <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
-                            </div>
-                            <div class="social-links">
-                                <ul class="list-wrap">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                    <div class="tgmobile__menu-backdrop"></div>
-                    <!-- End Mobile Menu -->
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-expand top">
+        <div class="container header">
 
-    <!-- offCanvas-area -->
-    <div class="offCanvas__wrap">
-        <div class="offCanvas__body">
-            <div class="offCanvas__toggle"><i class="flaticon-addition"></i></div>
-            <div class="offCanvas__content">
-                <div class="offCanvas__logo logo">
-                    <a href="index.html" class="logo-dark"><img src="assets/img/logo/logo.png" alt="Logo"></a>
-                    <a href="index.html" class="logo-light"><img src="assets/img/logo/w_logo.png"
-                            alt="Logo"></a>
-                </div>
-                <p>Change how the world works with Biotellus, made for ecology.</p>
-                <ul class="offCanvas__instagram list-wrap">
-                    <li><a href="assets/img/blog/blog01.jpg" class="popup-image"><img
-                                src="assets/img/blog/blog01.jpg" alt="img"></a></li>
-                    <li><a href="assets/img/blog/blog02.jpg" class="popup-image"><img
-                                src="assets/img/blog/blog02.jpg" alt="img"></a></li>
-                    <li><a href="assets/img/blog/blog03.jpg" class="popup-image"><img
-                                src="assets/img/blog/blog03.jpg" alt="img"></a></li>
-                    <li><a href="assets/img/blog/blog04.jpg" class="popup-image"><img
-                                src="assets/img/blog/blog04.jpg" alt="img"></a></li>
-                    <li><a href="assets/img/blog/blog05.jpg" class="popup-image"><img
-                                src="assets/img/blog/blog05.jpg" alt="img"></a></li>
-                    <li><a href="assets/img/blog/blog06.jpg" class="popup-image"><img
-                                src="assets/img/blog/blog06.jpg" alt="img"></a></li>
-                </ul>
-            </div>
-            <div class="offCanvas__contact">
-                <h4 class="title">Get In Touch</h4>
-                <ul class="offCanvas__contact-list list-wrap">
-                    <li><i class="fas fa-envelope-open"></i><a href="mailto:info@webmail.com">info@webmail.com</a>
-                    </li>
-                    <li><i class="fas fa-phone"></i><a href="tel:88899988877">888 999 888 77</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i> 12/A, New Booston, NYC</li>
-                </ul>
-                <ul class="offCanvas__social list-wrap">
-                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                </ul>
-            </div>
+            <!-- Navbar Items [left] -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link pl-0"><i class="fas fa-clock mr-2"></i>Open Hours: Mon - Sat -
+                        9:00 - 18:00</a>
+                </li>
+            </ul>
+
+            <!-- Nav holder -->
+            <div class="ml-auto"></div>
+
+            <!-- Navbar Items [right] -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fas fa-phone-alt mr-2"></i>+1 (305) 1234-5678</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link"><i class="fas fa-envelope mr-2"></i>hello@example.com</a>
+                </li>
+            </ul>
+
+            <!-- Navbar Icons -->
+            <ul class="navbar-nav icons">
+                <li class="nav-item social">
+                    <a href="#" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item social">
+                    <a href="#" class="nav-link"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item social">
+                    <a href="#" class="nav-link pr-0"><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+
         </div>
-    </div>
-    <div class="offCanvas__overlay"></div>
-    <!-- offCanvas-area-end -->
+    </nav>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-fixed sub">
+        <div class="container header">
+
+            <!-- Navbar Brand-->
+            <a class="navbar-brand light" href="/">
+                <span class="brand">
+                    <span class="featured">
+                        <span class="first">NEX</span>
+                    </span>
+                    <span class="last">GEN</span>
+                </span>
+
+                <!--
+                        Custom Logo
+                        <img src="assets/images/logo.svg" alt="NEXGEN">
+                    -->
+            </a>
+
+            <!-- Nav holder -->
+            <div class="ml-auto"></div>
+
+            <!-- Navbar Items -->
+            <ul class="navbar-nav items">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">HOME <i class="icon-arrow-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Multi-Page <i class="icon-arrow-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="home-1.html" class="nav-link">Consulting
+                                        <span>1</span></a></li>
+                                <li class="nav-item"><a href="home-2.html" class="nav-link">Consulting
+                                        <span>2</span></a></li>
+                                <li class="nav-item"><a href="home-3.html" class="nav-link">Consulting
+                                        <span>3</span></a></li>
+                                <li class="nav-item"><a href="home-4.html" class="nav-link">Consulting
+                                        <span>4</span></a></li>
+                                <li class="nav-item"><a href="home-5.html" class="nav-link">Consulting
+                                        <span>5</span></a></li>
+                                <li class="nav-item"><a href="home-6.html" class="nav-link">Consulting
+                                        <span>6</span></a></li>
+                                <li class="nav-item"><a href="home-7.html" class="nav-link">Logistics
+                                        <span>7</span></a></li>
+                                <li class="nav-item"><a href="home-8.html" class="nav-link">Logistics
+                                        <span>8</span></a></li>
+                                <li class="nav-item"><a href="home-9.html" class="nav-link">Logistics
+                                        <span>9</span></a></li>
+                                <li class="nav-item"><a href="home-10.html" class="nav-link">Logistics
+                                        <span>10</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">One-Page <i class="icon-arrow-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="home-1-one-page.html" class="nav-link">Consulting
+                                        <span>1</span></a></li>
+                                <li class="nav-item"><a href="home-2-one-page.html" class="nav-link">Consulting
+                                        <span>2</span></a></li>
+                                <li class="nav-item"><a href="home-3-one-page.html" class="nav-link">Consulting
+                                        <span>3</span></a></li>
+                                <li class="nav-item"><a href="home-4-one-page.html" class="nav-link">Consulting
+                                        <span>4</span></a></li>
+                                <li class="nav-item"><a href="home-5-one-page.html" class="nav-link">Consulting
+                                        <span>5</span></a></li>
+                                <li class="nav-item"><a href="home-6-one-page.html" class="nav-link">Consulting
+                                        <span>6</span></a></li>
+                                <li class="nav-item"><a href="home-7-one-page.html" class="nav-link">Logistics
+                                        <span>7</span></a></li>
+                                <li class="nav-item"><a href="home-8-one-page.html" class="nav-link">Logistics
+                                        <span>8</span></a></li>
+                                <li class="nav-item"><a href="home-9-one-page.html" class="nav-link">Logistics
+                                        <span>9</span></a></li>
+                                <li class="nav-item"><a href="home-10-one-page.html" class="nav-link">Logistics
+                                        <span>10</span></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">PAGES <i class="icon-arrow-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">About <i class="icon-arrow-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="page-about-1.html" class="nav-link">About
+                                        <span>1</span></a></li>
+                                <li class="nav-item"><a href="page-about-2.html" class="nav-link">About
+                                        <span>2</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="page-services-1.html" class="nav-link">Services</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Single Service <i class="icon-arrow-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="page-single-service-1.html" class="nav-link">Single
+                                        Service <span>1</span></a></li>
+                                <li class="nav-item"><a href="page-single-service-2.html" class="nav-link">Single
+                                        Service <span>2</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="page-projects-1.html" class="nav-link">Projects</a></li>
+                        <li class="nav-item"><a href="page-single-project-1.html" class="nav-link">Single
+                                Project</a></li>
+                        <li class="nav-item"><a href="page-pricing-table-1.html" class="nav-link">Pricing
+                                Table</a></li>
+                        <li class="nav-item"><a href="page-our-people-1.html" class="nav-link">Our People</a>
+                        </li>
+                        <li class="nav-item"><a href="page-testimonials-1.html" class="nav-link">Testimonials</a>
+                        </li>
+                        <li class="nav-item"><a href="page-partners-1.html" class="nav-link">Partners</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Contact <i class="icon-arrow-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="page-contact-1.html" class="nav-link">Contact
+                                        <span>1</span></a></li>
+                                <li class="nav-item"><a href="page-contact-2.html" class="nav-link">Contact
+                                        <span>2</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="page-search-1.html" class="nav-link">Search Results</a>
+                        </li>
+                        <li class="nav-item"><a href="page-404-1.html" class="nav-link">404 Page</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">BLOG <i class="icon-arrow-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Blog Posts <i class="icon-arrow-right"></i></a>
+                            <ul class="dropdown-menu">
+                                <li class="nav-item"><a href="page-blog-1.html" class="nav-link">Blog Posts
+                                        <span>1</span></a></li>
+                                <li class="nav-item"><a href="page-blog-2.html" class="nav-link">Blog Posts
+                                        <span>2</span></a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a href="page-single-post-1.html" class="nav-link">Single Post</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">PARTS <i class="icon-arrow-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item"><a href="part-section.html" class="nav-link">Section</a></li>
+                        <li class="nav-item"><a href="part-text-block.html" class="nav-link">Text Block</a></li>
+                        <li class="nav-item"><a href="part-card.html" class="nav-link">Card</a></li>
+                        <li class="nav-item"><a href="part-image-gallery.html" class="nav-link">Image Gallery</a>
+                        </li>
+                        <li class="nav-item"><a href="part-image-block.html" class="nav-link">Image Block</a>
+                        </li>
+                        <li class="nav-item"><a href="part-video-gallery.html" class="nav-link">Video Gallery</a>
+                        </li>
+                        <li class="nav-item"><a href="part-person.html" class="nav-link">Person</a></li>
+                        <li class="nav-item"><a href="part-carousel.html" class="nav-link">Carousel</a></li>
+                        <li class="nav-item"><a href="part-counter.html" class="nav-link">Counter</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- Navbar Icons -->
+            <ul class="navbar-nav icons">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
+                        <i class="icon-magnifier"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Navbar Toggle -->
+            <ul class="navbar-nav toggle">
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#menu">
+                        <i class="icon-menu m-0"></i>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Navbar Action -->
+            <ul class="navbar-nav action">
+                <li class="nav-item ml-3">
+                    <a href="https://themeforest.net/item/nexgen-corporate-business-consulting-html-template/27965988?license=regular&open_purchase_for_item_id=27965988"
+                        target="_blank" class="btn ml-lg-auto primary-button">PURSHASE</a>
+                    <!--
+                            Suggestion: Replace the purchase button above with a contact button.
+                            
+                            <a href="#contact" class="smooth-anchor btn ml-lg-auto primary-button">CONTACT US</a>
+                        -->
+                </li>
+            </ul>
+        </div>
+    </nav>
 
 </header>
