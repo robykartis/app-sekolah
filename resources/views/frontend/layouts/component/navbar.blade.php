@@ -49,15 +49,16 @@
             <a class="navbar-brand light" href="/">
                 <span class="brand">
                     <span class="featured">
-                        <span class="first">NEX</span>
+                        <span class="first">APP</span>
                     </span>
-                    <span class="last">GEN</span>
+                    <span class="last">{{ App\Models\Setting::first()->nama_app }}</span>
                 </span>
 
-                <!--
-                        Custom Logo
-                        <img src="assets/images/logo.svg" alt="NEXGEN">
-                    -->
+
+
+                {{-- <img src="/logo_app/{{ App\Models\Setting::first()->logo_app }}" height="90px" width="70px"
+                    alt="NEXGEN"> --}}
+
             </a>
 
             <!-- Nav holder -->
@@ -65,148 +66,49 @@
 
             <!-- Navbar Items -->
             <ul class="navbar-nav items">
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">HOME <i class="icon-arrow-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Multi-Page <i class="icon-arrow-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="home-1.html" class="nav-link">Consulting
-                                        <span>1</span></a></li>
-                                <li class="nav-item"><a href="home-2.html" class="nav-link">Consulting
-                                        <span>2</span></a></li>
-                                <li class="nav-item"><a href="home-3.html" class="nav-link">Consulting
-                                        <span>3</span></a></li>
-                                <li class="nav-item"><a href="home-4.html" class="nav-link">Consulting
-                                        <span>4</span></a></li>
-                                <li class="nav-item"><a href="home-5.html" class="nav-link">Consulting
-                                        <span>5</span></a></li>
-                                <li class="nav-item"><a href="home-6.html" class="nav-link">Consulting
-                                        <span>6</span></a></li>
-                                <li class="nav-item"><a href="home-7.html" class="nav-link">Logistics
-                                        <span>7</span></a></li>
-                                <li class="nav-item"><a href="home-8.html" class="nav-link">Logistics
-                                        <span>8</span></a></li>
-                                <li class="nav-item"><a href="home-9.html" class="nav-link">Logistics
-                                        <span>9</span></a></li>
-                                <li class="nav-item"><a href="home-10.html" class="nav-link">Logistics
-                                        <span>10</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">One-Page <i class="icon-arrow-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="home-1-one-page.html" class="nav-link">Consulting
-                                        <span>1</span></a></li>
-                                <li class="nav-item"><a href="home-2-one-page.html" class="nav-link">Consulting
-                                        <span>2</span></a></li>
-                                <li class="nav-item"><a href="home-3-one-page.html" class="nav-link">Consulting
-                                        <span>3</span></a></li>
-                                <li class="nav-item"><a href="home-4-one-page.html" class="nav-link">Consulting
-                                        <span>4</span></a></li>
-                                <li class="nav-item"><a href="home-5-one-page.html" class="nav-link">Consulting
-                                        <span>5</span></a></li>
-                                <li class="nav-item"><a href="home-6-one-page.html" class="nav-link">Consulting
-                                        <span>6</span></a></li>
-                                <li class="nav-item"><a href="home-7-one-page.html" class="nav-link">Logistics
-                                        <span>7</span></a></li>
-                                <li class="nav-item"><a href="home-8-one-page.html" class="nav-link">Logistics
-                                        <span>8</span></a></li>
-                                <li class="nav-item"><a href="home-9-one-page.html" class="nav-link">Logistics
-                                        <span>9</span></a></li>
-                                <li class="nav-item"><a href="home-10-one-page.html" class="nav-link">Logistics
-                                        <span>10</span></a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">HOME </a>
+
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">PAGES <i class="icon-arrow-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">About <i class="icon-arrow-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="page-about-1.html" class="nav-link">About
-                                        <span>1</span></a></li>
-                                <li class="nav-item"><a href="page-about-2.html" class="nav-link">About
-                                        <span>2</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="page-services-1.html" class="nav-link">Services</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Single Service <i class="icon-arrow-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="page-single-service-1.html" class="nav-link">Single
-                                        Service <span>1</span></a></li>
-                                <li class="nav-item"><a href="page-single-service-2.html" class="nav-link">Single
-                                        Service <span>2</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="page-projects-1.html" class="nav-link">Projects</a></li>
-                        <li class="nav-item"><a href="page-single-project-1.html" class="nav-link">Single
-                                Project</a></li>
-                        <li class="nav-item"><a href="page-pricing-table-1.html" class="nav-link">Pricing
-                                Table</a></li>
-                        <li class="nav-item"><a href="page-our-people-1.html" class="nav-link">Our People</a>
-                        </li>
-                        <li class="nav-item"><a href="page-testimonials-1.html" class="nav-link">Testimonials</a>
-                        </li>
-                        <li class="nav-item"><a href="page-partners-1.html" class="nav-link">Partners</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Contact <i class="icon-arrow-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="page-contact-1.html" class="nav-link">Contact
-                                        <span>1</span></a></li>
-                                <li class="nav-item"><a href="page-contact-2.html" class="nav-link">Contact
-                                        <span>2</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="page-search-1.html" class="nav-link">Search Results</a>
-                        </li>
-                        <li class="nav-item"><a href="page-404-1.html" class="nav-link">404 Page</a></li>
-                    </ul>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">BLOG </a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">BLOG <i class="icon-arrow-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link" href="#">Blog Posts <i class="icon-arrow-right"></i></a>
-                            <ul class="dropdown-menu">
-                                <li class="nav-item"><a href="page-blog-1.html" class="nav-link">Blog Posts
-                                        <span>1</span></a></li>
-                                <li class="nav-item"><a href="page-blog-2.html" class="nav-link">Blog Posts
-                                        <span>2</span></a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="page-single-post-1.html" class="nav-link">Single Post</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown">
-                    <a href="#" class="nav-link">PARTS <i class="icon-arrow-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li class="nav-item"><a href="part-section.html" class="nav-link">Section</a></li>
-                        <li class="nav-item"><a href="part-text-block.html" class="nav-link">Text Block</a></li>
-                        <li class="nav-item"><a href="part-card.html" class="nav-link">Card</a></li>
-                        <li class="nav-item"><a href="part-image-gallery.html" class="nav-link">Image Gallery</a>
-                        </li>
-                        <li class="nav-item"><a href="part-image-block.html" class="nav-link">Image Block</a>
-                        </li>
-                        <li class="nav-item"><a href="part-video-gallery.html" class="nav-link">Video Gallery</a>
-                        </li>
-                        <li class="nav-item"><a href="part-person.html" class="nav-link">Person</a></li>
-                        <li class="nav-item"><a href="part-carousel.html" class="nav-link">Carousel</a></li>
-                        <li class="nav-item"><a href="part-counter.html" class="nav-link">Counter</a></li>
-                    </ul>
-                </li>
+
             </ul>
 
             <!-- Navbar Icons -->
             <ul class="navbar-nav icons">
                 <li class="nav-item">
-                    <a href="#" class="nav-link" data-toggle="modal" data-target="#search">
-                        <i class="icon-magnifier"></i>
-                    </a>
+                    @if (Route::has('login'))
+                        <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
+                            @auth
+                                @if (Auth::user()->role == 'super_admin')
+                                    <a href="{{ route('super_admin.index') }}"
+                                        class="btn btn-sm ml-lg-auto primary-button">Dashboard</a>
+                                @elseif(Auth::user()->role == 'admin')
+                                    <a href="{{ route('adm_admin.index') }}"
+                                        class="btn btn-sm ml-lg-auto primary-button">Dashboard</a>
+                                @elseif(Auth::user()->role == 'kepala_sekolah')
+                                    <a href="{{ route('kepala_sekolah.index') }}"
+                                        class="btn btn-sm ml-lg-auto primary-button">Dashboard</a>
+                                @elseif(Auth::user()->role == 'guru_sekolah')
+                                    <a href="{{ route('guru_sekolah.index') }}"
+                                        class="btn btn-sm ml-lg-auto primary-button">Dashboard</a>
+                                @else
+                                    <a href="{{ route('murid.index') }}"
+                                        class="btn btn-sm ml-lg-auto primary-button">Dashboard</a>
+                                @endif
+                            @else
+                                <a href="{{ route('login') }}" class="btn btn-sm ml-lg-auto primary-button">Login</a>
+
+                                {{-- @if (Route::has('register'))
+                                    <a href="{{ route('register') }}"
+                                        class="btn btn-sm ml-lg-auto primary-button">Login</a>
+                                @endif --}}
+                            @endauth
+                        </div>
+                    @endif
                 </li>
             </ul>
 
@@ -220,17 +122,7 @@
             </ul>
 
             <!-- Navbar Action -->
-            <ul class="navbar-nav action">
-                <li class="nav-item ml-3">
-                    <a href="https://themeforest.net/item/nexgen-corporate-business-consulting-html-template/27965988?license=regular&open_purchase_for_item_id=27965988"
-                        target="_blank" class="btn ml-lg-auto primary-button">PURSHASE</a>
-                    <!--
-                            Suggestion: Replace the purchase button above with a contact button.
-                            
-                            <a href="#contact" class="smooth-anchor btn ml-lg-auto primary-button">CONTACT US</a>
-                        -->
-                </li>
-            </ul>
+
         </div>
     </nav>
 
